@@ -1,0 +1,1463 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="fr">
+    <title>Quel statut juridique choisir ? Simulateur gratuit 2026</title>
+    <meta name="description"
+        content="Quel statut juridique choisir pour votre entreprise ? Utilisez notre simulateur gratuit en 5 minutes pour trouver le statut idéal : EI, EURL, SASU, SARL, SAS.">
+    <link rel="canonical" href="https://statut-juridique-entreprise.fr/quel-statut-juridique-choisir">
+    <link rel="icon" type="image/png" href="/images/favicon-statut-juridique-entreprise.png">
+
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://statut-juridique-entreprise.fr/quel-statut-juridique-choisir">
+    <meta property="og:title" content="Quel statut juridique choisir ? Simulateur gratuit 2026">
+    <meta property="og:description" content="Trouvez le statut juridique idéal pour votre entreprise grâce à notre simulateur gratuit. EI, EURL, SASU, SARL, SAS : comparez en 5 minutes.">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Quel statut juridique choisir ? Simulateur gratuit 2026">
+    <meta property="twitter:description" content="Quel statut juridique choisir pour créer votre entreprise en 2026 ? Simulateur interactif gratuit, comparatifs et conseils d'experts.">
+
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Quel statut juridique choisir ?","url":"https://statut-juridique-entreprise.fr/quel-statut-juridique-choisir","description":"Trouvez le statut juridique idéal pour votre entreprise grâce à notre simulateur gratuit."}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://statut-juridique-entreprise.fr/"},{"@type":"ListItem","position":2,"name":"Quel statut juridique choisir","item":"https://statut-juridique-entreprise.fr/quel-statut-juridique-choisir"}]}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Quelle est la différence fondamentale entre une EI et une société en matière de responsabilité ?","acceptedAnswer":{"@type":"Answer","text":"L'entreprise individuelle, depuis la réforme de 2022, bénéficie d'une séparation automatique des patrimoines. En société comme la SARL ou la SAS, la responsabilité est limitée aux apports."}},{"@type":"Question","name":"Un micro-entrepreneur peut-il passer en société sans tout recommencer ?","acceptedAnswer":{"@type":"Answer","text":"Oui, un micro-entrepreneur peut transformer son activité en société (EURL, SARL, SAS). L'accompagnement d'un expert-comptable facilite cette transition."}},{"@type":"Question","name":"Comment choisir entre la SARL et la SAS lorsqu'on s'associe à plusieurs ?","acceptedAnswer":{"@type":"Answer","text":"La SARL offre un cadre légal rassurant, la SAS une liberté quasi totale dans les statuts. Le régime social du dirigeant diffère également."}},{"@type":"Question","name":"L'impôt sur les sociétés est-il toujours plus avantageux que l'impôt sur le revenu ?","acceptedAnswer":{"@type":"Answer","text":"Pas nécessairement. L'IS est intéressant pour les bénéfices élevés. Pour des bénéfices modestes, l'IR peut être plus avantageux."}}]}</script>
+
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = { theme: { extend: { colors: { primary: "#0052cc", "primary-dark": "#003d99", "primary-light": "#e6f0ff", secondary: "#00a3ff", "secondary-dark": "#0082cc", "secondary-light": "#e6f7ff" }, fontFamily: { heading: ["Montserrat", "sans-serif"], body: ["Open Sans", "sans-serif"] } } } }</script>
+    <style>
+        body { font-family: 'Open Sans', sans-serif; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Montserrat', sans-serif; }
+        .reveal-on-scroll { opacity: 0; transform: translateY(40px); transition: opacity 0.8s ease-out, transform 0.8s ease-out; }
+        .reveal-on-scroll.revealed { opacity: 1; transform: translateY(0); }
+        .glass-card-blue { background: rgba(0,82,204,0.04); backdrop-filter: blur(12px); border: 1px solid rgba(0,82,204,0.1); }
+        .gradient-hero { background: linear-gradient(135deg, #0052cc 0%, #00a3ff 50%, #0052cc 100%); }
+        .gradient-text { background: linear-gradient(135deg, #0052cc, #00a3ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .progress-bar-fill { transition: width 0.5s ease-out; }
+        .wizard-step { display: none; }
+        .wizard-step.active { display: block; animation: fadeIn 0.4s ease-out; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        .wizard-option { cursor: pointer; transition: all 0.3s ease; }
+        .wizard-option:hover { transform: translateY(-2px); box-shadow: 0 8px 25px rgba(0,82,204,0.1); border-color: #0052cc40; }
+        .wizard-option.selected { border-color: #0052cc; background-color: #e6f0ff; box-shadow: 0 0 0 3px rgba(0,82,204,0.15); }
+        .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.4s ease-out, padding 0.3s ease; }
+        .faq-answer.open { max-height: 500px; padding-top: 1rem; }
+        .faq-icon { transition: transform 0.3s ease; }
+    </style>
+    <script src="/components.js" defer></script>
+</head>
+
+<body class="bg-white text-neutral-900">
+    <main>
+        <section id="simulateur" class="gradient-hero py-16 md:py-24">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto mb-10">
+                    <span class="inline-block bg-white/20 text-white text-sm font-semibold px-4 py-2 rounded-full mb-4 backdrop-blur-sm">⚡ Simulateur interactif gratuit</span>
+                    <h1 class="font-heading text-3xl md:text-5xl font-extrabold text-white mb-6 leading-tight">
+                        Quel statut juridique choisir ?
+                    </h1>
+                    <p class="text-lg text-white/90 leading-relaxed max-w-2xl mx-auto">
+                        Répondez à 11 questions simples pour recevoir une recommandation personnalisée. <strong>Gratuit, sans inscription, résultat en 5 minutes.</strong>
+                    </p>
+                </div>
+                <div class="max-w-3xl mx-auto">
+                    <div class="mb-8">
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="text-sm font-semibold text-white/80" id="wizard-step-label">Pour commencer</span>
+                            <span class="text-sm font-semibold text-white" id="wizard-percent">0%</span>
+                        </div>
+                        <div class="w-full bg-white/20 rounded-full h-3">
+                            <div class="progress-bar-fill bg-white h-3 rounded-full" id="wizard-progress" style="width: 0%"></div>
+                        </div>
+                    </div>
+                    <div class="bg-white/95 backdrop-blur-lg rounded-3xl p-8 md:p-12 shadow-2xl" id="wizard-container">
+            <div class="wizard-step active" data-step="0">
+              <h3 class="font-heading text-2xl font-bold text-neutral-900 mb-2" id="q0-title">Quelle est votre situation ?</h3>
+              <p class="text-neutral-600 mb-8">Choisissez votre point de départ pour personnaliser le parcours.</p>
+              <div class="grid md:grid-cols-2 gap-4" role="radiogroup" aria-labelledby="q0-title">
+                <div class="wizard-option border-2 border-neutral-200 rounded-2xl p-6 bg-white" data-value="creation"
+                  onclick="selectOption(this, 0)" role="radio" aria-checked="false" tabindex="0"
+                  onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();selectOption(this,0);}">
+                  <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-4">
+                    <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path>
+                    </svg>
+                  </div>
+                  <h4 class="font-heading font-bold text-lg mb-1">Je veux créer mon entreprise</h4>
+                  <p class="text-neutral-500 text-sm">Je n'ai pas encore de structure et je cherche le bon statut pour démarrer</p>
+                </div>
+                <div class="wizard-option border-2 border-neutral-200 rounded-2xl p-6 bg-white" data-value="changement"
+                  onclick="selectOption(this, 0)" role="radio" aria-checked="false" tabindex="0"
+                  onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();selectOption(this,0);}">
+                  <div class="w-12 h-12 bg-secondary/10 rounded-xl flex items-center justify-center mb-4">
+                    <svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
+                    </svg>
+                  </div>
+                  <h4 class="font-heading font-bold text-lg mb-1">J'ai déjà une entreprise</h4>
+                  <p class="text-neutral-500 text-sm">Je veux vérifier si mon statut actuel est toujours le plus adapté ou en changer</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 1 : Activité principale -->
+            <div class="wizard-step" data-step="1">
+              <h3 class="font-heading text-2xl font-bold text-neutral-900 mb-2" id="q1-title">Quelle est votre activité principale ?</h3>
+              <p class="text-neutral-600 mb-8">Certaines activités imposent ou favorisent des statuts spécifiques.</p>
+              <div class="grid md:grid-cols-2 gap-4" role="radiogroup" aria-labelledby="q1-title">
+                <div class="wizard-option border-2 border-neutral-200 rounded-2xl p-6 bg-white" data-value="commerce"
+                  onclick="selectOption(this, 1)" role="radio" aria-checked="false" tabindex="0"
+                  onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();selectOption(this,1);}">
+                  <h4 class="font-heading font-bold text-lg mb-1">🛒 Commerce</h4>
+                  <p class="text-neutral-500 text-sm">Achat/revente, e-commerce, négoce, import/export…</p>
+                </div>
+                <div class="wizard-option border-2 border-neutral-200 rounded-2xl p-6 bg-white" data-value="artisanat"
+                  onclick="selectOption(this, 1)" role="radio" aria-checked="false" tabindex="0"
+                  onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();selectOption(this,1);}">
+                  <h4 class="font-heading font-bold text-lg mb-1">🔧 Artisanat</h4>
+                  <p class="text-neutral-500 text-sm">Boulangerie, plomberie, menuiserie, coiffure…</p>
+                </div>
+                <div class="wizard-option border-2 border-neutral-200 rounded-2xl p-6 bg-white" data-value="services"
+                  onclick="selectOption(this, 1)" role="radio" aria-checked="false" tabindex="0"
+                  onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();selectOption(this,1);}">
+                  <h4 class="font-heading font-bold text-lg mb-1">💼 Services</h4>
+                  <p class="text-neutral-500 text-sm">Conseil, formation, marketing, développeur, freelance…</p>
+                </div>
+                <div class="wizard-option border-2 border-neutral-200 rounded-2xl p-6 bg-white" data-value="liberale"
+                  onclick="selectOption(this, 1)" role="radio" aria-checked="false" tabindex="0"
+                  onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();selectOption(this,1);}">
+                  <h4 class="font-heading font-bold text-lg mb-1">📋 Profession libérale</h4>
+                  <p class="text-neutral-500 text-sm">Médecin, avocat, architecte, expert-comptable…</p>
+                </div>
+                <div class="wizard-option border-2 border-neutral-200 rounded-2xl p-6 bg-white" data-value="agriculture"
+                  onclick="selectOption(this, 1)" role="radio" aria-checked="false" tabindex="0"
+                  onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();selectOption(this,1);}">
+                  <h4 class="font-heading font-bold text-lg mb-1">🌾 Agriculture</h4>
+                  <p class="text-neutral-500 text-sm">Exploitation agricole, viticulture, élevage…</p>
+                </div>
+                <div class="wizard-option border-2 border-neutral-200 rounded-2xl p-6 bg-white" data-value="autre"
+                  onclick="selectOption(this, 1)" role="radio" aria-checked="false" tabindex="0"
+                  onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();selectOption(this,1);}">
+                  <h4 class="font-heading font-bold text-lg mb-1">🔄 Autre activité</h4>
+                  <p class="text-neutral-500 text-sm">Activité mixte ou ne rentrant pas dans les catégories ci-dessus</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 2 : Associés -->
+            <div class="wizard-step" data-step="2">
+              <h3 class="font-heading text-2xl font-bold text-neutral-900 mb-2" id="q2-title">Avez-vous des associés ?</h3>
+              <p class="text-neutral-600 mb-8">Le nombre d'associés détermine les statuts juridiques accessibles pour votre projet.</p>
+              <div class="grid md:grid-cols-3 gap-4" role="radiogroup" aria-labelledby="q2-title">
+                <div class="wizard-option border-2 border-neutral-200 rounded-2xl p-6 bg-white" data-value="seul"
+                  onclick="selectOption(this, 2)" role="radio" aria-checked="false" tabindex="0"
+                  onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();selectOption(this,2);}">
+                  <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-4">
+                    <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                    </svg>
+                  </div>
+                  <h4 class="font-heading font-bold text-lg mb-1">Non, seul</h4>
+                  <p class="text-neutral-500 text-sm">Je suis l'unique fondateur</p>
+                </div>
+                <div class="wizard-option border-2 border-neutral-200 rounded-2xl p-6 bg-white" data-value="un_associe"
+                  onclick="selectOption(this, 2)" role="radio" aria-checked="false" tabindex="0"
+                  onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();selectOption(this,2);}">
+                  <div class="w-12 h-12 bg-secondary/10 rounded-xl flex items-center justify-center mb-4">
+                    <svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                    </svg>
+                  </div>
+                  <h4 class="font-heading font-bold text-lg mb-1">Oui, 1 associé</h4>
+                  <p class="text-neutral-500 text-sm">Nous serons deux à créer l'entreprise</p>
+                </div>
+                <div class="wizard-option border-2 border-neutral-200 rounded-2xl p-6 bg-white" data-value="plusieurs"
+                  onclick="selectOption(this, 2)" role="radio" aria-checked="false" tabindex="0"
+                  onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();selectOption(this,2);}">
+                  <div class="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center mb-4">
+                    <svg class="w-6 h-6 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                    </svg>
+                  </div>
+                  <h4 class="font-heading font-bold text-lg mb-1">Oui, 2 ou plus</h4>
+                  <p class="text-neutral-500 text-sm">Nous serons 3 associés ou plus</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 3 : Chiffre d'affaires -->
+            <div class="wizard-step" data-step="3">
+              <h3 class="font-heading text-2xl font-bold text-neutral-900 mb-2" id="q3-title">Quel est votre chiffre d'affaires annuel estimé ?</h3>
+              <p class="text-neutral-600 mb-8">Ce montant détermine l'éligibilité à la micro-entreprise et les régimes fiscaux possibles.</p>
+              <div class="grid md:grid-cols-2 gap-4" role="radiogroup" aria-labelledby="q3-title">
+                <div class="wizard-option border-2 border-neutral-200 rounded-2xl p-6 bg-white" data-value="moins_15k"
+                  onclick="selectOption(this, 3)" role="radio" aria-checked="false" tabindex="0"
+                  onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();selectOption(this,3);}">
+                  <h4 class="font-heading font-bold text-lg mb-1">💰 Moins de 15 000 €</h4>
+                  <p class="text-neutral-500 text-sm">Activité complémentaire ou démarrage</p>
+                </div>
+                <div class="wizard-option border-2 border-neutral-200 rounded-2xl p-6 bg-white" data-value="15k_77k"
+                  onclick="selectOption(this, 3)" role="radio" aria-checked="false" tabindex="0"
+                  onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();selectOption(this,3);}">
+                  <h4 class="font-heading font-bold text-lg mb-1">💰💰 15 000 € à 77 700 €</h4>
+                  <p class="text-neutral-500 text-sm">Eligible au régime micro-entreprise (services)</p>
+                </div>
+                <div class="wizard-option border-2 border-neutral-200 rounded-2xl p-6 bg-white" data-value="77k_200k"
+                  onclick="selectOption(this, 3)" role="radio" aria-checked="false" tabindex="0"
+                  onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();selectOption(this,3);}">
+                  <h4 class="font-heading font-bold text-lg mb-1">💰💰💰 77 700 € à 200 000 €</h4>
+                  <p class="text-neutral-500 text-sm">Chiffre d'affaires intermédiaire, régime réel</p>
+                </div>
+                <div class="wizard-option border-2 border-neutral-200 rounded-2xl p-6 bg-white" data-value="plus_200k"
+                  onclick="selectOption(this, 3)" role="radio" aria-checked="false" tabindex="0"
+                  onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();selectOption(this,3);}">
+                  <h4 class="font-heading font-bold text-lg mb-1">💰💰💰💰 Plus de 200 000 €</h4>
+                  <p class="text-neutral-500 text-sm">Chiffre d'affaires élevé, société recommandée</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 4 : Objectif principal -->
+            <div class="wizard-step" data-step="4">
+              <h3 class="font-heading text-2xl font-bold text-neutral-900 mb-2" id="q4-title">Quel est votre principal objectif ?</h3>
+              <p class="text-neutral-600 mb-8">Cela nous aide à prioriser les critères qui comptent le plus pour vous.</p>
+              <div class="grid md:grid-cols-2 gap-4" role="radiogroup" aria-labelledby="q4-title">
+                <div class="wizard-option border-2 border-neutral-200 rounded-2xl p-6 bg-white" data-value="simplicite"
+                  onclick="selectOption(this, 4)" role="radio" aria-checked="false" tabindex="0"
+                  onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();selectOption(this,4);}">
+                  <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mb-4 text-xl">⚡</div>
+                  <h4 class="font-heading font-bold text-lg mb-1">Simplicité administrative</h4>
+                  <p class="text-neutral-500 text-sm">Peu de paperasse, gestion facile au quotidien</p>
+                </div>
+                <div class="wizard-option border-2 border-neutral-200 rounded-2xl p-6 bg-white" data-value="fiscal"
+                  onclick="selectOption(this, 4)" role="radio" aria-checked="false" tabindex="0"
+                  onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();selectOption(this,4);}">
+                  <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4 text-xl">📊</div>
+                  <h4 class="font-heading font-bold text-lg mb-1">Optimisation fiscale</h4>
+                  <p class="text-neutral-500 text-sm">Maximiser mes revenus nets, déduire mes charges</p>
+                </div>
+                <div class="wizard-option border-2 border-neutral-200 rounded-2xl p-6 bg-white" data-value="protection"
+                  onclick="selectOption(this, 4)" role="radio" aria-checked="false" tabindex="0"
+                  onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();selectOption(this,4);}">
+                  <div class="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center mb-4 text-xl">🛡️</div>
+                  <h4 class="font-heading font-bold text-lg mb-1">Protection du patrimoine</h4>
+                  <p class="text-neutral-500 text-sm">Séparer mes biens personnels de l'entreprise</p>
+                </div>
+                <div class="wizard-option border-2 border-neutral-200 rounded-2xl p-6 bg-white" data-value="credibilite"
+                  onclick="selectOption(this, 4)" role="radio" aria-checked="false" tabindex="0"
+                  onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();selectOption(this,4);}">
+                  <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mb-4 text-xl">🏆</div>
+                  <h4 class="font-heading font-bold text-lg mb-1">Crédibilité auprès des clients</h4>
+                  <p class="text-neutral-500 text-sm">Image professionnelle, rassurer les partenaires</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 5 : Emploi salarié en parallèle -->
+            <div class="wizard-step" data-step="5">
+              <h3 class="font-heading text-2xl font-bold text-neutral-900 mb-2" id="q5-title">Avez-vous un emploi salarié en parallèle ?</h3>
+              <p class="text-neutral-600 mb-8">Cumuler un emploi salarié avec une activité indépendante influence le choix du statut et du régime social.</p>
+              <div class="grid md:grid-cols-2 gap-4" role="radiogroup" aria-labelledby="q5-title">
+                <div class="wizard-option border-2 border-neutral-200 rounded-2xl p-6 bg-white" data-value="oui"
+                  onclick="selectOption(this, 5)" role="radio" aria-checked="false" tabindex="0"
+                  onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();selectOption(this,5);}">
+                  <h4 class="font-heading font-bold text-lg mb-1">✅ Oui, je suis salarié</h4>
+                  <p class="text-neutral-500 text-sm">Je veux lancer mon activité en parallèle de mon emploi</p>
+                </div>
+                <div class="wizard-option border-2 border-neutral-200 rounded-2xl p-6 bg-white" data-value="non"
+                  onclick="selectOption(this, 5)" role="radio" aria-checked="false" tabindex="0"
+                  onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();selectOption(this,5);}">
+                  <h4 class="font-heading font-bold text-lg mb-1">❌ Non, activité principale</h4>
+                  <p class="text-neutral-500 text-sm">Ce sera mon activité à temps plein</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 6 : Rémunération -->
+            <div class="wizard-step" data-step="6">
+              <h3 class="font-heading text-2xl font-bold text-neutral-900 mb-2" id="q6-title">Souhaitez-vous vous verser un salaire ?</h3>
+              <p class="text-neutral-600 mb-8">Le mode de rémunération du dirigeant varie fortement selon le statut choisi.</p>
+              <div class="grid md:grid-cols-3 gap-4" role="radiogroup" aria-labelledby="q6-title">
+                <div class="wizard-option border-2 border-neutral-200 rounded-2xl p-6 bg-white" data-value="salaire"
+                  onclick="selectOption(this, 6)" role="radio" aria-checked="false" tabindex="0"
+                  onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();selectOption(this,6);}">
+                  <h4 class="font-heading font-bold text-lg mb-1">💶 Oui, tous les mois</h4>
+                  <p class="text-neutral-500 text-sm">Je veux un revenu régulier et prévisible</p>
+                </div>
+                <div class="wizard-option border-2 border-neutral-200 rounded-2xl p-6 bg-white" data-value="benefices"
+                  onclick="selectOption(this, 6)" role="radio" aria-checked="false" tabindex="0"
+                  onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();selectOption(this,6);}">
+                  <h4 class="font-heading font-bold text-lg mb-1">📈 Uniquement les bénéfices</h4>
+                  <p class="text-neutral-500 text-sm">Je me rémunère sur ce que l'entreprise génère</p>
+                </div>
+                <div class="wizard-option border-2 border-neutral-200 rounded-2xl p-6 bg-white" data-value="pas_decide"
+                  onclick="selectOption(this, 6)" role="radio" aria-checked="false" tabindex="0"
+                  onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();selectOption(this,6);}">
+                  <h4 class="font-heading font-bold text-lg mb-1">🤔 Pas encore décidé</h4>
+                  <p class="text-neutral-500 text-sm">Je verrai en fonction de l'évolution de l'activité</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 7 : Tolérance au risque -->
+            <div class="wizard-step" data-step="7">
+              <h3 class="font-heading text-2xl font-bold text-neutral-900 mb-2" id="q7-title">Quelle est votre tolérance au risque financier ?</h3>
+              <p class="text-neutral-600 mb-8">La responsabilité vis-à-vis des dettes de l'entreprise varie fortement selon le statut choisi.</p>
+              <div class="grid md:grid-cols-2 gap-4" role="radiogroup" aria-labelledby="q7-title">
+                <div class="wizard-option border-2 border-neutral-200 rounded-2xl p-6 bg-white" data-value="proteger"
+                  onclick="selectOption(this, 7)" role="radio" aria-checked="false" tabindex="0"
+                  onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();selectOption(this,7);}">
+                  <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mb-4">
+                    <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                    </svg>
+                  </div>
+                  <h4 class="font-heading font-bold text-lg mb-1">Je veux protéger mes biens personnels</h4>
+                  <p class="text-neutral-500 text-sm">Responsabilité limitée aux apports, patrimoine personnel protégé</p>
+                </div>
+                <div class="wizard-option border-2 border-neutral-200 rounded-2xl p-6 bg-white" data-value="pas_patrimoine"
+                  onclick="selectOption(this, 7)" role="radio" aria-checked="false" tabindex="0"
+                  onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();selectOption(this,7);}">
+                  <div class="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center mb-4">
+                    <svg class="w-6 h-6 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                    </svg>
+                  </div>
+                  <h4 class="font-heading font-bold text-lg mb-1">Pas de patrimoine à protéger</h4>
+                  <p class="text-neutral-500 text-sm">La simplicité prime, je n'ai pas d'enjeu patrimonial majeur</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 8 : Levée de fonds -->
+            <div class="wizard-step" data-step="8">
+              <h3 class="font-heading text-2xl font-bold text-neutral-900 mb-2" id="q8-title">Avez-vous des projets d'investisseurs ou de levée de fonds ?</h3>
+              <p class="text-neutral-600 mb-8">Certaines formes juridiques sont bien plus adaptées à l'ouverture du capital et à l'entrée d'investisseurs.</p>
+              <div class="grid md:grid-cols-3 gap-4" role="radiogroup" aria-labelledby="q8-title">
+                <div class="wizard-option border-2 border-neutral-200 rounded-2xl p-6 bg-white" data-value="oui_court"
+                  onclick="selectOption(this, 8)" role="radio" aria-checked="false" tabindex="0"
+                  onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();selectOption(this,8);}">
+                  <h4 class="font-heading font-bold text-lg mb-1">✅ Oui, à court terme</h4>
+                  <p class="text-neutral-500 text-sm">Je prévois de lever des fonds rapidement</p>
+                </div>
+                <div class="wizard-option border-2 border-neutral-200 rounded-2xl p-6 bg-white" data-value="peut_etre"
+                  onclick="selectOption(this, 8)" role="radio" aria-checked="false" tabindex="0"
+                  onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();selectOption(this,8);}">
+                  <h4 class="font-heading font-bold text-lg mb-1">🤔 Peut-être à terme</h4>
+                  <p class="text-neutral-500 text-sm">Je veux garder cette option ouverte</p>
+                </div>
+                <div class="wizard-option border-2 border-neutral-200 rounded-2xl p-6 bg-white" data-value="non"
+                  onclick="selectOption(this, 8)" role="radio" aria-checked="false" tabindex="0"
+                  onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();selectOption(this,8);}">
+                  <h4 class="font-heading font-bold text-lg mb-1">❌ Non, pas prévu</h4>
+                  <p class="text-neutral-500 text-sm">Je souhaite garder le contrôle total</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 9 : TVA -->
+            <div class="wizard-step" data-step="9">
+              <h3 class="font-heading text-2xl font-bold text-neutral-900 mb-2" id="q9-title">Quelle est votre situation vis-à-vis de la TVA ?</h3>
+              <p class="text-neutral-600 mb-8">La franchise en base de TVA est un avantage de la micro-entreprise, mais la récupération de TVA est utile si vous avez beaucoup d'achats.</p>
+              <div class="grid md:grid-cols-3 gap-4" role="radiogroup" aria-labelledby="q9-title">
+                <div class="wizard-option border-2 border-neutral-200 rounded-2xl p-6 bg-white" data-value="pas_tva"
+                  onclick="selectOption(this, 9)" role="radio" aria-checked="false" tabindex="0"
+                  onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();selectOption(this,9);}">
+                  <h4 class="font-heading font-bold text-lg mb-1">🚫 Pas de TVA</h4>
+                  <p class="text-neutral-500 text-sm">Je préfère la franchise en base (micro)</p>
+                </div>
+                <div class="wizard-option border-2 border-neutral-200 rounded-2xl p-6 bg-white" data-value="recuperer_tva"
+                  onclick="selectOption(this, 9)" role="radio" aria-checked="false" tabindex="0"
+                  onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();selectOption(this,9);}">
+                  <h4 class="font-heading font-bold text-lg mb-1">✅ Récupérer la TVA</h4>
+                  <p class="text-neutral-500 text-sm">J'ai des investissements / achats importants</p>
+                </div>
+                <div class="wizard-option border-2 border-neutral-200 rounded-2xl p-6 bg-white" data-value="ne_sais_pas"
+                  onclick="selectOption(this, 9)" role="radio" aria-checked="false" tabindex="0"
+                  onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();selectOption(this,9);}">
+                  <h4 class="font-heading font-bold text-lg mb-1">❓ Je ne sais pas</h4>
+                  <p class="text-neutral-500 text-sm">Je ne connais pas encore ma situation</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 10 : Accompagnement comptable -->
+            <div class="wizard-step" data-step="10">
+              <h3 class="font-heading text-2xl font-bold text-neutral-900 mb-2" id="q10-title">Quel niveau d'accompagnement comptable souhaitez-vous ?</h3>
+              <p class="text-neutral-600 mb-8">Certains statuts imposent une comptabilité complète avec expert-comptable, d'autres sont très simples à gérer seul.</p>
+              <div class="grid md:grid-cols-3 gap-4" role="radiogroup" aria-labelledby="q10-title">
+                <div class="wizard-option border-2 border-neutral-200 rounded-2xl p-6 bg-white" data-value="seul"
+                  onclick="selectOption(this, 10)" role="radio" aria-checked="false" tabindex="0"
+                  onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();selectOption(this,10);}">
+                  <h4 class="font-heading font-bold text-lg mb-1">🙋 Tout gérer seul</h4>
+                  <p class="text-neutral-500 text-sm">Comptabilité simplifiée, livre de recettes</p>
+                </div>
+                <div class="wizard-option border-2 border-neutral-200 rounded-2xl p-6 bg-white" data-value="aide"
+                  onclick="selectOption(this, 10)" role="radio" aria-checked="false" tabindex="0"
+                  onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();selectOption(this,10);}">
+                  <h4 class="font-heading font-bold text-lg mb-1">🤝 Aide ponctuelle</h4>
+                  <p class="text-neutral-500 text-sm">Logiciel de compta + aide ponctuelle d'un pro</p>
+                </div>
+                <div class="wizard-option border-2 border-neutral-200 rounded-2xl p-6 bg-white" data-value="expert"
+                  onclick="selectOption(this, 10)" role="radio" aria-checked="false" tabindex="0"
+                  onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();selectOption(this,10);}">
+                  <h4 class="font-heading font-bold text-lg mb-1">👨‍💼 Expert-comptable</h4>
+                  <p class="text-neutral-500 text-sm">Comptabilité complète obligatoire, ça me va</p>
+                </div>
+              </div>
+            </div>
+                        <div class="wizard-step" data-step="results" id="wizard-results">
+                            <div id="results-container"></div>
+                        </div>
+                        <div class="flex justify-between mt-8" id="wizard-nav">
+                            <button id="btn-prev" class="hidden items-center text-neutral-600 font-semibold px-6 py-3 rounded-xl border border-neutral-200 hover:bg-neutral-50 transition-colors" onclick="prevStep()" aria-label="Etape précédente">
+                                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                                Précédent
+                            </button>
+                            <div></div>
+                            <button id="btn-next" class="hidden items-center bg-primary text-white font-semibold px-8 py-3 rounded-xl hover:bg-primary-dark transition-colors" onclick="nextStep()" aria-label="Etape suivante">
+                                Suivant
+                                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- ===== SECTION 1: Entreprise individuelle ===== -->
+<section class="py-16 md:py-24 reveal-on-scroll">
+    <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="font-heading text-3xl md:text-4xl font-bold mb-8">Choisir le bon <span
+                    class="gradient-text">statut juridique</span> pour une entreprise individuelle</h2>
+            <div class="prose prose-lg max-w-none text-neutral-700 leading-relaxed space-y-6">
+                <p>Lorsqu'un porteur de projet envisage de se lancer seul, la première question qui se pose concerne la
+                    forme juridique la plus adaptée à son activité. L'<strong>entreprise individuelle</strong>, souvent
+                    désignée par l'acronyme <strong>EI</strong>, constitue la structure la plus immédiate et la plus
+                    accessible pour démarrer une activité professionnelle. Ce <strong>statut juridique</strong> séduit
+                    par sa simplicité, mais il implique des conséquences fiscales, sociales et patrimoniales qu'il
+                    convient d'appréhender avec précision avant de s'engager.</p>
+                <p>Prenons l'exemple de Claire, graphiste indépendante, qui souhaite exercer son activité de manière
+                    autonome. Elle hésite entre plusieurs formes juridiques et se demande laquelle protégera au mieux
+                    ses intérêts tout en lui permettant de développer son chiffre d'affaires sereinement. Son parcours
+                    illustrera, au fil de cet article, les enjeux concrets liés à chaque option.</p>
+                <h3 class="font-heading text-2xl font-bold text-neutral-900 mt-10 mb-4">Caractéristiques clés de
+                    l'entreprise individuelle et régime fiscal</h3>
+                <p>L'<strong>EI</strong> se distingue des formes sociétaires par une caractéristique fondamentale : elle
+                    ne possède pas de personnalité juridique distincte de celle de son créateur. Il n'existe pas de
+                    <strong>capital social</strong> à constituer, pas de statuts à rédiger, et les formalités de
+                    <strong>création</strong> se révèlent considérablement allégées par rapport à celles d'une
+                    <strong>société</strong>.</p>
+                <p>Cette simplicité administrative représente un atout majeur pour quiconque souhaite démarrer
+                    rapidement. La <strong>création</strong> d'une EI se résume à une déclaration d'activité auprès du
+                    guichet unique. Aucun apport minimal n'est requis.</p>
+                <h4 class="font-heading text-xl font-semibold text-neutral-800 mt-8 mb-3">Responsabilité illimitée et
+                    protection du patrimoine personnel</h4>
+                <p>Historiquement, l'un des principaux freins résidait dans la <strong>responsabilité</strong> illimitée
+                    de l'entrepreneur. Depuis la réforme de mai 2022, le législateur a instauré une <strong>séparation
+                        automatique des patrimoines personnel et professionnel</strong> pour toutes les EI. Pour Claire,
+                    cela signifie que son logement personnel ne pourrait plus être menacé en cas de dette
+                    professionnelle impayée.</p>
+                <h4 class="font-heading text-xl font-semibold text-neutral-800 mt-8 mb-3">Options fiscales : impôt sur
+                    le revenu ou impôt sur les sociétés</h4>
+                <p>Par défaut, les bénéfices d'une <strong>EI</strong> sont soumis à l'<strong>impôt sur le
+                        revenu</strong>. Le législateur a ouvert la possibilité d'opter pour l'<strong>impôt sur les
+                        sociétés</strong>. Le <strong>dirigeant</strong> se verse alors une
+                    <strong>rémunération</strong> déductible du résultat imposable.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== SECTION 2: Micro-entrepreneur ===== -->
+<section class="py-16 md:py-24 bg-neutral-50 reveal-on-scroll">
+    <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="font-heading text-3xl md:text-4xl font-bold mb-8">Avantages et limites du statut <span
+                    class="gradient-text">micro-entrepreneur</span></h2>
+            <div class="prose prose-lg max-w-none text-neutral-700 leading-relaxed space-y-6">
+                <p>Le statut de micro-entrepreneur constitue en réalité un <strong>régime fiscal</strong> et social
+                    simplifié applicable à l'EI. Il ne s'agit pas d'un <strong>statut juridique</strong> à part entière,
+                    mais d'un ensemble de règles allégées destinées à faciliter la vie des petites activités.</p>
+                <h3 class="font-heading text-2xl font-bold text-neutral-900 mt-10 mb-4">Plafonds de chiffre d'affaires
+                    et simplifications administratives</h3>
+                <p>L'activité doit respecter des <strong>plafonds de chiffre d'affaires annuel</strong>. Les
+                    <strong>cotisations sociales</strong> sont calculées en pourcentage du chiffre d'affaires
+                    effectivement encaissé, ce qui signifie qu'en l'absence de recettes, aucune charge sociale n'est
+                    due.</p>
+                <p>Sur le plan fiscal, le micro-entrepreneur peut opter pour le versement libératoire de l'<strong>impôt
+                        sur le revenu</strong>, en même temps que les <strong>cotisations sociales</strong>.</p>
+                <h3 class="font-heading text-2xl font-bold text-neutral-900 mt-10 mb-4">Conséquences sur la protection
+                    patrimoniale et régime social</h3>
+                <p>Le <strong>régime social</strong> du micro-entrepreneur relève des travailleurs non salariés. La
+                    <strong>protection sociale</strong> qui en découle reste plus modeste que celle d'un
+                    <strong>dirigeant</strong> assimilé salarié.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== SECTION 3: Sociétés ===== -->
+<section class="py-16 md:py-24 reveal-on-scroll">
+    <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="font-heading text-3xl md:text-4xl font-bold mb-8">Les statuts juridiques en <span
+                    class="gradient-text">société</span> : options unipersonnelles et pluripersonnelles</h2>
+            <div class="prose prose-lg max-w-none text-neutral-700 leading-relaxed space-y-6">
+                <p>Lorsque le projet dépasse le cadre de l'activité individuelle, la <strong>création</strong> d'une
+                    <strong>société</strong> devient une option incontournable. Une société possède sa propre
+                    personnalité juridique, distincte de celle de ses fondateurs.</p>
+                <h3 class="font-heading text-2xl font-bold text-neutral-900 mt-10 mb-4">Particularités des statuts
+                    unipersonnels : EURL et SASU</h3>
+                <p>L'<strong>EURL</strong> et la <strong>SASU</strong> permettent de créer une société à
+                    <strong>associé</strong> unique. En <strong>EURL</strong>, l'<strong>associé</strong> unique gérant
+                    relève du <strong>régime social</strong> des travailleurs non salariés avec des <strong>cotisations
+                        sociales</strong> calculées sur sa <strong>rémunération</strong> et ses
+                    <strong>dividendes</strong>. En SASU, le président bénéficie du statut d'assimilé salarié.</p>
+                <h4 class="font-heading text-xl font-semibold text-neutral-800 mt-8 mb-3">Responsabilité des associés et
+                    capital social minimal</h4>
+                <p>La <strong>responsabilité</strong> de l'<strong>associé</strong> unique est limitée au montant de ses
+                    apports. Le <strong>capital social</strong> minimal est symboliquement fixé à un euro.</p>
+                <h3 class="font-heading text-2xl font-bold text-neutral-900 mt-10 mb-4">Caractéristiques des principales
+                    sociétés pluripersonnelles</h3>
+                <p>La <strong>SARL</strong> accueille entre 2 et 100 <strong>associé</strong>s. La <strong>SAS</strong>
+                    offre une souplesse statutaire bien plus grande. La <strong>SA</strong> s'adresse aux projets
+                    d'envergure (minimum 37 000 € de <strong>capital social</strong>). La <strong>SNC</strong> se
+                    caractérise par une <strong>responsabilité</strong> solidaire et illimitée.</p>
+            </div>
+            <div class="overflow-x-auto mt-10">
+                <table class="w-full text-sm border-collapse rounded-xl overflow-hidden shadow-sm">
+                    <thead>
+                        <tr class="bg-gradient-to-r from-primary to-primary-dark text-white">
+                            <th class="py-4 px-4 text-left font-bold">Forme juridique</th>
+                            <th class="py-4 px-4 text-center font-bold">Nombre d'associés</th>
+                            <th class="py-4 px-4 text-center font-bold">Responsabilité</th>
+                            <th class="py-4 px-4 text-center font-bold">Régime fiscal</th>
+                            <th class="py-4 px-4 text-center font-bold">Régime social</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="bg-white border-b border-neutral-100 hover:bg-primary-light/30">
+                            <td class="py-3 px-4 font-semibold">EI</td>
+                            <td class="py-3 px-4 text-center">1 (entrepreneur)</td>
+                            <td class="py-3 px-4 text-center">Séparation des patrimoines</td>
+                            <td class="py-3 px-4 text-center">Impôt sur le revenu</td>
+                            <td class="py-3 px-4 text-center">TNS</td>
+                        </tr>
+                        <tr class="bg-neutral-50 border-b border-neutral-100 hover:bg-primary-light/30">
+                            <td class="py-3 px-4 font-semibold">EURL</td>
+                            <td class="py-3 px-4 text-center">1 associé</td>
+                            <td class="py-3 px-4 text-center">Limitée aux apports</td>
+                            <td class="py-3 px-4 text-center">IR (option IS)</td>
+                            <td class="py-3 px-4 text-center">TNS</td>
+                        </tr>
+                        <tr class="bg-white border-b border-neutral-100 hover:bg-primary-light/30">
+                            <td class="py-3 px-4 font-semibold">SARL</td>
+                            <td class="py-3 px-4 text-center">2 à 100</td>
+                            <td class="py-3 px-4 text-center">Limitée aux apports</td>
+                            <td class="py-3 px-4 text-center">IS (option IR)</td>
+                            <td class="py-3 px-4 text-center">TNS (maj.) / Assimilé</td>
+                        </tr>
+                        <tr class="bg-neutral-50 border-b border-neutral-100 hover:bg-primary-light/30">
+                            <td class="py-3 px-4 font-semibold">SAS</td>
+                            <td class="py-3 px-4 text-center">2+ (pas de max)</td>
+                            <td class="py-3 px-4 text-center">Limitée aux apports</td>
+                            <td class="py-3 px-4 text-center">IS (option IR)</td>
+                            <td class="py-3 px-4 text-center">Assimilé salarié</td>
+                        </tr>
+                        <tr class="bg-white border-b border-neutral-100 hover:bg-primary-light/30">
+                            <td class="py-3 px-4 font-semibold">SA</td>
+                            <td class="py-3 px-4 text-center">2 ou 7 min.</td>
+                            <td class="py-3 px-4 text-center">Limitée aux apports</td>
+                            <td class="py-3 px-4 text-center">IS</td>
+                            <td class="py-3 px-4 text-center">Assimilé salarié</td>
+                        </tr>
+                        <tr class="bg-neutral-50 hover:bg-primary-light/30">
+                            <td class="py-3 px-4 font-semibold">SNC</td>
+                            <td class="py-3 px-4 text-center">2 minimum</td>
+                            <td class="py-3 px-4 text-center">Solidaire et illimitée</td>
+                            <td class="py-3 px-4 text-center">IR</td>
+                            <td class="py-3 px-4 text-center">TNS</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== SECTION 4: Comparaison ===== -->
+<section class="py-16 md:py-24 bg-neutral-50 reveal-on-scroll">
+    <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="font-heading text-3xl md:text-4xl font-bold mb-8">Comparaison approfondie des <span
+                    class="gradient-text">avantages et inconvénients</span></h2>
+            <div class="prose prose-lg max-w-none text-neutral-700 leading-relaxed space-y-6">
+                <h3 class="font-heading text-2xl font-bold text-neutral-900 mt-6 mb-4">Séparation des patrimoines et
+                    responsabilité financière</h3>
+                <p>La question de la <strong>responsabilité</strong> constitue le premier critère. En
+                    <strong>société</strong> à <strong>responsabilité limitée</strong> (<strong>SARL</strong>,
+                    <strong>SAS</strong>, <strong>SA</strong>), l'<strong>associé</strong> ne risque de perdre que le
+                    montant de son apport. L'<strong>EI</strong> bénéficie depuis 2022 d'une protection similaire. En
+                    <strong>SNC</strong>, la responsabilité solidaire et illimitée fait peser un risque considérable.
+                </p>
+                <h3 class="font-heading text-2xl font-bold text-neutral-900 mt-10 mb-4">Flexibilité statutaire et coûts
+                    de création</h3>
+                <p>La <strong>SAS</strong> remporte la palme de la souplesse. La <strong>SARL</strong> obéit à un cadre
+                    légal plus rigide. L'<strong>EI</strong> et le micro-entrepreneur restent imbattables sur les
+                    formalités et coûts de <strong>création</strong>.</p>
+                <h3 class="font-heading text-2xl font-bold text-neutral-900 mt-10 mb-4">Protection sociale et
+                    crédibilité</h3>
+                <p>Le statut d'assimilé salarié (président de <strong>SAS</strong>, <strong>SA</strong>) garantit une
+                    couverture plus complète en contrepartie de charges sociales plus élevées (70-80 % vs 40-45 % TNS).
+                    Pour Claire, la transformation de son <strong>EI</strong> en <strong>SAS</strong> a rassuré un grand
+                    donneur d'ordres qui exigeait une structure sociétaire.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== SECTION 5: Critères essentiels ===== -->
+<section class="py-16 md:py-24 reveal-on-scroll">
+    <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="font-heading text-3xl md:text-4xl font-bold mb-8">Critères essentiels pour <span
+                    class="gradient-text">sélectionner le statut juridique</span> adapté</h2>
+            <div class="prose prose-lg max-w-none text-neutral-700 leading-relaxed space-y-6">
+                <h3 class="font-heading text-2xl font-bold text-neutral-900 mt-6 mb-4">Analyse des besoins en
+                    financement et pérennité</h3>
+                <p>La <strong>SAS</strong> se prête particulièrement bien aux levées de fonds. Une
+                    <strong>société</strong> survit au départ de ses <strong>associé</strong>s, contrairement à
+                    l'<strong>EI</strong>.</p>
+                <ul class="space-y-3 mt-6">
+                    <li class="flex items-start gap-3"><span class="text-primary font-bold mt-1">→</span> Évaluer le
+                        montant des investissements et la capacité d'autofinancement</li>
+                    <li class="flex items-start gap-3"><span class="text-primary font-bold mt-1">→</span> Déterminer si
+                        l'activité sera exercée seul ou avec des <strong>associé</strong>s</li>
+                    <li class="flex items-start gap-3"><span class="text-primary font-bold mt-1">→</span> Identifier le
+                        niveau de <strong>responsabilité</strong> acceptable</li>
+                    <li class="flex items-start gap-3"><span class="text-primary font-bold mt-1">→</span> Anticiper les
+                        perspectives de croissance</li>
+                </ul>
+                <h3 class="font-heading text-2xl font-bold text-neutral-900 mt-10 mb-4">Impact sur le régime fiscal,
+                    social et la gestion</h3>
+                <p>Le <strong>régime fiscal</strong> influe directement sur la rentabilité nette. L'<strong>impôt sur le
+                        revenu</strong> convient aux revenus modestes. L'<strong>impôt sur les sociétés</strong> est
+                    plus avantageux pour les bénéfices élevés.</p>
+            </div>
+            <div class="overflow-x-auto mt-10">
+                <table class="w-full text-sm border-collapse rounded-xl overflow-hidden shadow-sm">
+                    <thead>
+                        <tr class="bg-gradient-to-r from-primary to-primary-dark text-white">
+                            <th class="py-4 px-4 text-left font-bold">Critère</th>
+                            <th class="py-4 px-4 text-center font-bold">EI / Micro</th>
+                            <th class="py-4 px-4 text-center font-bold">SARL / EURL</th>
+                            <th class="py-4 px-4 text-center font-bold">SAS / SASU</th>
+                            <th class="py-4 px-4 text-center font-bold">SA</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="bg-white border-b">
+                            <td class="py-3 px-4 font-semibold">Simplicité</td>
+                            <td class="py-3 px-4 text-center text-green-600 font-semibold">Très élevée</td>
+                            <td class="py-3 px-4 text-center">Modérée</td>
+                            <td class="py-3 px-4 text-center">Modérée</td>
+                            <td class="py-3 px-4 text-center text-amber-600">Complexe</td>
+                        </tr>
+                        <tr class="bg-neutral-50 border-b">
+                            <td class="py-3 px-4 font-semibold">Coût</td>
+                            <td class="py-3 px-4 text-center text-green-600 font-semibold">Très faible</td>
+                            <td class="py-3 px-4 text-center">Modéré</td>
+                            <td class="py-3 px-4 text-center">Modéré</td>
+                            <td class="py-3 px-4 text-center text-red-500">Élevé</td>
+                        </tr>
+                        <tr class="bg-white border-b">
+                            <td class="py-3 px-4 font-semibold">Flexibilité</td>
+                            <td class="py-3 px-4 text-center text-red-500">Inexistante</td>
+                            <td class="py-3 px-4 text-center">Limitée</td>
+                            <td class="py-3 px-4 text-center text-green-600 font-semibold">Très élevée</td>
+                            <td class="py-3 px-4 text-center">Encadrée</td>
+                        </tr>
+                        <tr class="bg-neutral-50 border-b">
+                            <td class="py-3 px-4 font-semibold">Financement</td>
+                            <td class="py-3 px-4 text-center text-amber-600">Limité</td>
+                            <td class="py-3 px-4 text-center">Correct</td>
+                            <td class="py-3 px-4 text-center text-green-600 font-semibold">Excellent</td>
+                            <td class="py-3 px-4 text-center text-green-600 font-semibold">Excellent</td>
+                        </tr>
+                        <tr class="bg-white">
+                            <td class="py-3 px-4 font-semibold">Transmission</td>
+                            <td class="py-3 px-4 text-center text-amber-600">Complexe</td>
+                            <td class="py-3 px-4 text-center">Encadrée</td>
+                            <td class="py-3 px-4 text-center text-green-600">Souple</td>
+                            <td class="py-3 px-4 text-center text-green-600">Souple</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== SECTION 6: Accompagnement ===== -->
+<section class="py-16 md:py-24 bg-neutral-50 reveal-on-scroll">
+    <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="font-heading text-3xl md:text-4xl font-bold mb-8">Importance de l'<span
+                    class="gradient-text">accompagnement professionnel</span></h2>
+            <div class="prose prose-lg max-w-none text-neutral-700 leading-relaxed space-y-6">
+                <p>L'expert-comptable occupe une position centrale dans le processus de <strong>création
+                        d'entreprise</strong>. Comment arbitrer entre <strong>SARL</strong> et <strong>SAS</strong> ?
+                    Quel niveau de <strong>rémunération</strong> fixer pour optimiser le couple cotisations-protection ?
+                </p>
+                <p>Claire, à chaque étape de son parcours, de la micro-entreprise à la <strong>SAS</strong>, a sollicité
+                    un expert-comptable. Ce partenariat de confiance lui a permis de prendre des décisions éclairées et
+                    de structurer sa croissance sans mauvaise surprise fiscale ou sociale.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== SECTION 7: FAQ ===== -->
+<section class="py-16 md:py-24 reveal-on-scroll">
+    <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="font-heading text-3xl md:text-4xl font-bold mb-10 text-center">Questions fréquentes sur le <span
+                    class="gradient-text">choix du statut juridique</span></h2>
+            <div class="space-y-4">
+                <div class="bg-white border border-neutral-200 rounded-2xl overflow-hidden shadow-sm"><button
+                        class="w-full flex items-center justify-between p-6 text-left focus:outline-none"
+                        onclick="toggleFaq(this)"><span class="font-heading font-bold text-neutral-900 pr-4">Quelle est
+                            la différence fondamentale entre une EI et une société en matière de responsabilité
+                            ?</span><svg class="faq-icon w-5 h-5 flex-shrink-0 text-primary" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg></button>
+                    <div class="faq-answer px-6 pb-6">
+                        <p class="text-neutral-700 leading-relaxed">L'entreprise individuelle, depuis la réforme de
+                            2022, bénéficie d'une séparation automatique des patrimoines personnel et professionnel.
+                            Toutefois, cette protection peut être levée dans certains cas. En société à responsabilité
+                            limitée comme la SARL ou la SAS, la responsabilité de chaque associé est strictement limitée
+                            au montant de ses apports dans le capital social, ce qui offre une protection patrimoniale
+                            généralement plus robuste.</p>
+                    </div>
+                </div>
+                <div class="bg-white border border-neutral-200 rounded-2xl overflow-hidden shadow-sm"><button
+                        class="w-full flex items-center justify-between p-6 text-left focus:outline-none"
+                        onclick="toggleFaq(this)"><span class="font-heading font-bold text-neutral-900 pr-4">Un
+                            micro-entrepreneur peut-il passer en société sans tout recommencer ?</span><svg
+                            class="faq-icon w-5 h-5 flex-shrink-0 text-primary" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg></button>
+                    <div class="faq-answer px-6 pb-6">
+                        <p class="text-neutral-700 leading-relaxed">Oui, un micro-entrepreneur peut transformer son
+                            activité en société, que ce soit en EURL, SARL, SAS ou autre forme. Cette transformation
+                            implique la création d'une nouvelle entité juridique, le transfert du fonds de commerce et
+                            l'accomplissement des formalités de constitution. L'accompagnement d'un expert-comptable
+                            facilite cette transition.</p>
+                    </div>
+                </div>
+                <div class="bg-white border border-neutral-200 rounded-2xl overflow-hidden shadow-sm"><button
+                        class="w-full flex items-center justify-between p-6 text-left focus:outline-none"
+                        onclick="toggleFaq(this)"><span class="font-heading font-bold text-neutral-900 pr-4">Comment
+                            choisir entre la SARL et la SAS lorsqu'on s'associe à plusieurs ?</span><svg
+                            class="faq-icon w-5 h-5 flex-shrink-0 text-primary" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg></button>
+                    <div class="faq-answer px-6 pb-6">
+                        <p class="text-neutral-700 leading-relaxed">Le choix dépend principalement du niveau de
+                            flexibilité souhaité et du régime social privilégié. La SARL offre un cadre légal rassurant
+                            avec des règles prédéfinies, tandis que la SAS permet une liberté quasi totale dans la
+                            rédaction des statuts. Le régime social diffère : TNS pour le gérant majoritaire de SARL,
+                            assimilé salarié pour le président de SAS.</p>
+                    </div>
+                </div>
+                <div class="bg-white border border-neutral-200 rounded-2xl overflow-hidden shadow-sm"><button
+                        class="w-full flex items-center justify-between p-6 text-left focus:outline-none"
+                        onclick="toggleFaq(this)"><span class="font-heading font-bold text-neutral-900 pr-4">L'impôt sur
+                            les sociétés est-il toujours plus avantageux que l'impôt sur le revenu ?</span><svg
+                            class="faq-icon w-5 h-5 flex-shrink-0 text-primary" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg></button>
+                    <div class="faq-answer px-6 pb-6">
+                        <p class="text-neutral-700 leading-relaxed">Pas nécessairement. L'impôt sur les sociétés est
+                            intéressant lorsque les bénéfices sont élevés et que l'entrepreneur souhaite réinvestir, car
+                            le taux est fixe. En revanche, pour des bénéfices modestes, l'imposition directe à l'impôt
+                            sur le revenu peut se révéler plus avantageuse. Une simulation chiffrée est indispensable
+                            avant de trancher.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== CTA ===== -->
+<section class="py-16 md:py-20 gradient-hero reveal-on-scroll">
+    <div class="container mx-auto px-6 text-center">
+        <h2 class="font-heading text-3xl md:text-4xl font-extrabold text-white mb-6">Vous hésitez encore ?<br>Lancez le
+            simulateur !</h2>
+        <p class="text-lg text-white/90 mb-8 max-w-2xl mx-auto">11 questions simples pour obtenir une recommandation
+            personnalisée. Gratuit, sans inscription, résultat immédiat.</p>
+        <a href="#simulateur"
+            class="inline-flex items-center gap-2 px-8 py-4 bg-white text-primary font-bold rounded-xl shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round"></polygon>
+            </svg>
+            Lancer le simulateur maintenant
+        </a>
+    </div>
+</section>
+</main>
+    <script>
+  <script>
+    // ========== Wizard Logic ==========
+    let currentStep = 0;
+    const totalSteps = 11; // 0 to 10
+    let answers = {};
+
+    // Statuts database with full info
+    const STATUTS = {
+      micro: {
+        name: 'Auto-entrepreneur / Micro-entreprise',
+        shortName: 'Micro-entreprise',
+        capital: 'Aucun',
+        fiscal: 'IR (micro)',
+        social: 'TNS simplifiÃ©',
+        responsabilite: 'Patrimoine sÃ©parÃ©',
+        cotisations: '~22% du CA',
+        complexite: 'TrÃ¨s simple',
+        description: 'Le statut le plus simple pour dÃ©marrer. Cotisations calculÃ©es sur le CA, franchise de TVA, comptabilitÃ© ultra-simplifiÃ©e (livre de recettes). IdÃ©al pour tester une activitÃ© ou en complÃ©ment d\'un emploi salariÃ©.',
+        avantages: ['CrÃ©ation en 10 minutes en ligne', 'Pas de capital requis', 'Cotisations proportionnelles au CA (0 â‚¬ si pas de CA)', 'Franchise de TVA sous seuil', 'ComptabilitÃ© ultra-simplifiÃ©e'],
+        inconvenients: ['Plafond de CA (77 700 â‚¬ services / 188 700 â‚¬ vente)', 'Impossible de dÃ©duire ses charges', 'Pas d\'associÃ©s possibles', 'Image moins crÃ©dible pour certains marchÃ©s'],
+        pageUrl: '/auto-entrepreneur-micro-entreprise'
+      },
+      ei: {
+        name: 'Entreprise Individuelle (EI)',
+        shortName: 'EI au rÃ©el',
+        capital: 'Aucun',
+        fiscal: 'IR rÃ©el (option IS)',
+        social: 'TNS',
+        responsabilite: 'Patrimoine sÃ©parÃ©',
+        cotisations: '~45% du bÃ©nÃ©fice',
+        complexite: 'Simple',
+        description: 'L\'EI au rÃ©gime rÃ©el permet de dÃ©duire toutes vos charges professionnelles. Depuis 2022, le patrimoine personnel est automatiquement protÃ©gÃ©. Pas de capital ni de statuts Ã  rÃ©diger.',
+        avantages: ['DÃ©duction de toutes les charges', 'Patrimoine personnel protÃ©gÃ© (loi 2022)', 'Pas de capital minimum', 'Option pour l\'IS possible', 'FormalitÃ©s de crÃ©ation simples'],
+        inconvenients: ['Pas d\'associÃ©s possibles', 'ComptabilitÃ© complÃ¨te obligatoire', 'Cotisations sur le bÃ©nÃ©fice (~45%)', 'Difficile Ã  transmettre ou cÃ©der'],
+        pageUrl: '/entreprise-individuelle'
+      },
+      eurl: {
+        name: 'EURL (Entreprise Unipersonnelle Ã  ResponsabilitÃ© LimitÃ©e)',
+        shortName: 'EURL',
+        capital: 'Libre (1 â‚¬)',
+        fiscal: 'IR (option IS)',
+        social: 'TNS',
+        responsabilite: 'LimitÃ©e aux apports',
+        cotisations: '~45% du bÃ©nÃ©fice',
+        complexite: 'ModÃ©rÃ©e',
+        description: 'L\'EURL combine la structure sociÃ©taire (responsabilitÃ© limitÃ©e, crÃ©dibilitÃ©) avec le rÃ©gime TNS (cotisations plus basses). Elle peut Ã©voluer en SARL par simple cession de parts.',
+        avantages: ['ResponsabilitÃ© limitÃ©e aux apports', 'Cotisations TNS (~45%)', 'Choix IR ou IS', 'Transformation facile en SARL', 'PossibilitÃ© de dÃ©duire les charges'],
+        inconvenients: ['RÃ©daction de statuts obligatoire', 'ComptabilitÃ© complÃ¨te', 'Formalisme juridique (AG, PV...)', 'CoÃ»ts de crÃ©ation (~250-500 â‚¬)'],
+        pageUrl: '/eurl'
+      },
+      sasu: {
+        name: 'SASU (SociÃ©tÃ© par Actions SimplifiÃ©e Unipersonnelle)',
+        shortName: 'SASU',
+        capital: 'Libre (1 â‚¬)',
+        fiscal: 'IS (option IR 5 ans)',
+        social: 'AssimilÃ© salariÃ©',
+        responsabilite: 'LimitÃ©e aux apports',
+        cotisations: '~65-80% du salaire',
+        complexite: 'ModÃ©rÃ©e',
+        description: 'La SASU offre le rÃ©gime assimilÃ© salariÃ© (meilleure couverture sociale), une grande flexibilitÃ© statutaire, et une facilitÃ© d\'Ã©volution vers la SAS pour accueillir des investisseurs.',
+        avantages: ['RÃ©gime assimilÃ© salariÃ© (meilleure protection)', 'Dividendes sans cotisations sociales', 'Grande flexibilitÃ© statutaire', 'Facilement transformable en SAS', 'Image crÃ©dible et professionnelle'],
+        inconvenients: ['Cotisations sociales Ã©levÃ©es (~65-80%)', 'Pas de couverture si pas de salaire versÃ©', 'ComptabilitÃ© complÃ¨te obligatoire', 'CoÃ»ts de crÃ©ation (~300-600 â‚¬)'],
+        pageUrl: '/sasu'
+      },
+      sarl: {
+        name: 'SARL (SociÃ©tÃ© Ã  ResponsabilitÃ© LimitÃ©e)',
+        shortName: 'SARL',
+        capital: 'Libre (1 â‚¬)',
+        fiscal: 'IS (option IR 5 ans)',
+        social: 'TNS (gÃ©rant maj.) / AssimilÃ© (min.)',
+        responsabilite: 'LimitÃ©e aux apports',
+        cotisations: '~45% (gÃ©rant maj.)',
+        complexite: 'ModÃ©rÃ©e Ã  complexe',
+        description: 'La SARL est la forme classique pour entreprendre Ã  plusieurs avec un cadre lÃ©gal trÃ¨s encadrÃ©. Le gÃ©rant majoritaire bÃ©nÃ©ficie du rÃ©gime TNS. IdÃ©ale pour les projets familiaux ou entre associÃ©s proches.',
+        avantages: ['Cadre juridique sÃ©curisant et bien connu', 'RÃ©gime TNS pour le gÃ©rant majoritaire', 'ResponsabilitÃ© limitÃ©e aux apports', 'SARL de famille : option IR sans limite de durÃ©e', 'De 2 Ã  100 associÃ©s'],
+        inconvenients: ['Cession de parts encadrÃ©e (agrÃ©ment)', 'Statuts rigides (peu de libertÃ©)', 'Pas adaptÃ©e pour lever des fonds', 'Cotisations sur dividendes (> 10% du capital)'],
+        pageUrl: '/sarl'
+      },
+      sas: {
+        name: 'SAS (SociÃ©tÃ© par Actions SimplifiÃ©e)',
+        shortName: 'SAS',
+        capital: 'Libre (1 â‚¬)',
+        fiscal: 'IS (option IR 5 ans)',
+        social: 'AssimilÃ© salariÃ©',
+        responsabilite: 'LimitÃ©e aux apports',
+        cotisations: '~65-80% du salaire',
+        complexite: 'ModÃ©rÃ©e Ã  complexe',
+        description: 'La SAS est le choix nÂ°1 pour accueillir des investisseurs grÃ¢ce Ã  sa flexibilitÃ© statutaire maximale (actions de prÃ©fÃ©rence, pacte d\'actionnaires, clauses sur mesure).',
+        avantages: ['FlexibilitÃ© statutaire maximale', 'Actions de prÃ©fÃ©rence possibles', 'Dividendes sans cotisations sociales', 'Pas de plafond d\'associÃ©s', 'Image trÃ¨s professionnelle'],
+        inconvenients: ['Cotisations sociales Ã©levÃ©es (~65-80%)', 'RÃ©daction des statuts complexe', 'ComptabilitÃ© complÃ¨te + commissaire aux comptes possible', 'CoÃ»ts de fonctionnement plus Ã©levÃ©s'],
+        pageUrl: '/sas'
+      },
+      snc: {
+        name: 'SNC (SociÃ©tÃ© en Nom Collectif)',
+        shortName: 'SNC',
+        capital: 'Libre',
+        fiscal: 'IR (option IS)',
+        social: 'TNS',
+        responsabilite: 'IndÃ©finie et solidaire',
+        cotisations: '~45% du bÃ©nÃ©fice',
+        complexite: 'Complexe',
+        description: 'La SNC est une sociÃ©tÃ© de personnes oÃ¹ tous les associÃ©s sont commerÃ§ants et indÃ©finiment responsables. UtilisÃ©e dans certains secteurs spÃ©cifiques (pharmacie, cabinets).',
+        avantages: ['Imposition Ã  l\'IR (transparence fiscale)', 'Pas de capital minimum', 'Fonctionnement souple entre associÃ©s de confiance', 'RÃ©gime TNS pour tous les associÃ©s'],
+        inconvenients: ['ResponsabilitÃ© indÃ©finie et solidaire', 'Tous les associÃ©s sont commerÃ§ants', 'Parts sociales peu cessibles', 'Peu utilisÃ©e en pratique'],
+        pageUrl: '/snc'
+      },
+      sci: {
+        name: 'SociÃ©tÃ© Civile (SCI, SCMâ€¦)',
+        shortName: 'SociÃ©tÃ© civile',
+        capital: 'Libre',
+        fiscal: 'IR (option IS)',
+        social: 'TNS',
+        responsabilite: 'IndÃ©finie (non solidaire)',
+        cotisations: 'Variable',
+        complexite: 'ModÃ©rÃ©e',
+        description: 'La sociÃ©tÃ© civile est adaptÃ©e pour les activitÃ©s non commerciales : gestion immobiliÃ¨re (SCI), mise en commun de moyens entre professionnels (SCM). Mention informative uniquement.',
+        avantages: ['AdaptÃ©e Ã  la gestion de patrimoine', 'Transmission facilitÃ©e', 'Souplesse de fonctionnement', 'Imposition Ã  l\'IR par dÃ©faut'],
+        inconvenients: ['ActivitÃ© commerciale interdite', 'ResponsabilitÃ© indÃ©finie des associÃ©s', 'Pas adaptÃ©e pour une activitÃ© classique', 'ComptabilitÃ© obligatoire si IS'],
+        pageUrl: '/societe-civile'
+      }
+    };
+
+    // Affiliate partners matrix per statut
+    const AFFILIATES = {
+      micro:  { legalstart: true, indy: true, qonto: true, shine: true, swapn: true },
+      ei:     { legalstart: true, indy: true, qonto: true, shine: true, swapn: false },
+      eurl:   { legalstart: true, indy: true, qonto: true, shine: true, swapn: true },
+      sasu:   { legalstart: true, indy: false, qonto: true, shine: true, swapn: true },
+      sarl:   { legalstart: true, indy: false, qonto: true, shine: true, swapn: true },
+      sas:    { legalstart: true, indy: false, qonto: true, shine: true, swapn: true },
+      snc:    { legalstart: true, indy: false, qonto: false, shine: false, swapn: false },
+      sci:    { legalstart: true, indy: false, qonto: false, shine: false, swapn: false }
+    };
+
+    const PARTNER_INFO = {
+      legalstart: { name: 'LegalStart', accroche: 'CrÃ©ez votre entreprise en ligne', color: '#1a73e8', url: '#' },
+      indy:       { name: 'Indy', accroche: 'ComptabilitÃ© pour indÃ©pendants', color: '#6c5ce7', url: '#' },
+      qonto:      { name: 'Qonto', accroche: 'Compte pro en ligne', color: '#0a1f44', url: '#' },
+      shine:      { name: 'Shine', accroche: 'Compte pro freelance', color: '#ff6b35', url: '#' },
+      swapn:      { name: 'SwapN', accroche: 'Domiciliation + crÃ©ation', color: '#00b894', url: '#' }
+    };
+
+    function selectOption(el, step) {
+      const stepEl = el.closest('.wizard-step');
+      stepEl.querySelectorAll('.wizard-option').forEach(function(opt) {
+        opt.classList.remove('selected');
+        opt.setAttribute('aria-checked', 'false');
+      });
+      el.classList.add('selected');
+      el.setAttribute('aria-checked', 'true');
+      answers[step] = el.getAttribute('data-value');
+
+      var btnNext = document.getElementById('btn-next');
+      btnNext.classList.remove('hidden');
+      btnNext.classList.add('inline-flex');
+
+      setTimeout(function() {
+        if (currentStep < totalSteps - 1) {
+          nextStep();
+        } else {
+          showResults();
+        }
+      }, 400);
+    }
+
+    function nextStep() {
+      if (answers[currentStep] === undefined) return;
+      if (currentStep < totalSteps - 1) {
+        currentStep++;
+        updateWizard();
+      } else {
+        showResults();
+      }
+    }
+
+    function prevStep() {
+      if (currentStep > 0) {
+        currentStep--;
+        updateWizard();
+      }
+    }
+
+    function updateWizard() {
+      document.querySelectorAll('.wizard-step').forEach(function(step) { step.classList.remove('active'); });
+      var targetStep = document.querySelector('.wizard-step[data-step="' + currentStep + '"]');
+      if (targetStep) targetStep.classList.add('active');
+
+      var progress = (currentStep / (totalSteps - 1)) * 100;
+      document.getElementById('wizard-progress').style.width = progress + '%';
+      if (currentStep === 0) {
+        document.getElementById('wizard-step-label').textContent = 'Pour commencer';
+      } else {
+        document.getElementById('wizard-step-label').textContent = 'Question ' + currentStep + ' sur 10';
+      }
+      document.getElementById('wizard-percent').textContent = Math.round(progress) + '%';
+
+      var btnPrev = document.getElementById('btn-prev');
+      var btnNext = document.getElementById('btn-next');
+      var wizardNav = document.getElementById('wizard-nav');
+
+      if (currentStep > 0) {
+        btnPrev.classList.remove('hidden');
+        btnPrev.classList.add('inline-flex');
+      } else {
+        btnPrev.classList.add('hidden');
+        btnPrev.classList.remove('inline-flex');
+      }
+
+      if (answers[currentStep] !== undefined) {
+        btnNext.classList.remove('hidden');
+        btnNext.classList.add('inline-flex');
+      } else {
+        btnNext.classList.add('hidden');
+        btnNext.classList.remove('inline-flex');
+      }
+
+      wizardNav.classList.remove('hidden');
+    }
+
+    function showResults() {
+      document.querySelectorAll('.wizard-step').forEach(function(step) { step.classList.remove('active'); });
+      document.querySelector('.wizard-step[data-step="results"]').classList.add('active');
+      document.getElementById('wizard-nav').classList.add('hidden');
+
+      document.getElementById('wizard-progress').style.width = '100%';
+      document.getElementById('wizard-step-label').textContent = 'Votre recommandation';
+      document.getElementById('wizard-percent').textContent = '100%';
+
+      var results = getRecommendations();
+      var container = document.getElementById('results-container');
+      container.innerHTML = '';
+
+      // Zone 1 : Recommandation principale
+      var best = results[0];
+      var scoreColor = best.score >= 80 ? 'text-green-600' : best.score >= 60 ? 'text-amber-600' : 'text-red-500';
+      var scoreRingColor = best.score >= 80 ? '#16a34a' : best.score >= 60 ? '#d97706' : '#ef4444';
+
+      var html = '<div class="text-center mb-8">';
+      html += '<div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">';
+      html += '<svg class="w-10 h-10 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>';
+      html += '</div>';
+      html += '<h3 class="font-heading text-2xl font-bold text-neutral-900 mb-2">Votre statut recommandÃ©</h3>';
+      html += '<p class="text-neutral-600">BasÃ© sur vos ' + Object.keys(answers).length + ' rÃ©ponses, voici les statuts les plus adaptÃ©s Ã  votre profil.</p>';
+      html += '</div>';
+
+      // Main recommendation card
+      html += '<div class="border-2 border-primary bg-primary/5 rounded-2xl p-6 md:p-8 mb-6">';
+      html += '<div class="flex flex-col md:flex-row items-start gap-6">';
+
+      // Score circle
+      html += '<div class="flex-shrink-0 mx-auto md:mx-0">';
+      html += '<div class="relative w-24 h-24">';
+      html += '<svg class="w-24 h-24 transform -rotate-90" viewBox="0 0 100 100">';
+      html += '<circle cx="50" cy="50" r="42" stroke="#e5e7eb" stroke-width="8" fill="none"/>';
+      html += '<circle cx="50" cy="50" r="42" stroke="' + scoreRingColor + '" stroke-width="8" fill="none" stroke-dasharray="' + (2 * Math.PI * 42) + '" stroke-dashoffset="' + (2 * Math.PI * 42 * (1 - best.score / 100)) + '" stroke-linecap="round"/>';
+      html += '</svg>';
+      html += '<div class="absolute inset-0 flex items-center justify-center">';
+      html += '<span class="text-2xl font-bold ' + scoreColor + '">' + best.score + '%</span>';
+      html += '</div></div>';
+      html += '<p class="text-xs text-neutral-500 text-center mt-1">CompatibilitÃ©</p>';
+      html += '</div>';
+
+      // Info
+      html += '<div class="flex-1">';
+      html += '<div class="flex items-center flex-wrap gap-2 mb-2">';
+      html += '<span class="text-2xl">ðŸ¥‡</span>';
+      html += '<h4 class="font-heading text-xl font-bold text-neutral-900">' + best.statut.name + '</h4>';
+      html += '<span class="inline-block bg-primary text-white text-xs font-bold px-3 py-1 rounded-full">RecommandÃ©</span>';
+      html += '</div>';
+      html += '<p class="text-neutral-700 leading-relaxed mb-4">' + best.reason + '</p>';
+
+      // Stats grid
+      html += '<div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-4">';
+      html += '<div class="bg-white rounded-lg px-3 py-2 text-center"><p class="text-xs text-neutral-500">Capital</p><p class="font-bold text-sm text-neutral-900">' + best.statut.capital + '</p></div>';
+      html += '<div class="bg-white rounded-lg px-3 py-2 text-center"><p class="text-xs text-neutral-500">Fiscal</p><p class="font-bold text-sm text-neutral-900">' + best.statut.fiscal + '</p></div>';
+      html += '<div class="bg-white rounded-lg px-3 py-2 text-center"><p class="text-xs text-neutral-500">Social</p><p class="font-bold text-sm text-neutral-900">' + best.statut.social + '</p></div>';
+      html += '<div class="bg-white rounded-lg px-3 py-2 text-center"><p class="text-xs text-neutral-500">ResponsabilitÃ©</p><p class="font-bold text-sm text-neutral-900">' + best.statut.responsabilite + '</p></div>';
+      html += '</div>';
+
+      // Avantages / InconvÃ©nients
+      html += '<div class="grid md:grid-cols-2 gap-4">';
+      html += '<div><h5 class="font-semibold text-green-700 text-sm mb-2">âœ… Avantages</h5><ul class="text-sm text-neutral-600 space-y-1">';
+      best.statut.avantages.forEach(function(a) { html += '<li>â€¢ ' + a + '</li>'; });
+      html += '</ul></div>';
+      html += '<div><h5 class="font-semibold text-red-600 text-sm mb-2">âš ï¸ Points d\'attention</h5><ul class="text-sm text-neutral-600 space-y-1">';
+      best.statut.inconvenients.forEach(function(i) { html += '<li>â€¢ ' + i + '</li>'; });
+      html += '</ul></div>';
+      html += '</div>';
+
+      html += '</div></div>';
+
+      // Affiliate CTA zone
+      var bestKey = best.key;
+      if (AFFILIATES[bestKey]) {
+        html += '<div class="mt-6 pt-6 border-t border-primary/20">';
+        html += '<p class="text-sm font-semibold text-neutral-700 mb-3">Passez Ã  l\'action avec nos partenaires de confiance :</p>';
+        html += '<div class="grid grid-cols-2 md:grid-cols-' + Math.min(Object.keys(AFFILIATES[bestKey]).filter(function(k) { return AFFILIATES[bestKey][k]; }).length, 3) + ' gap-3">';
+        Object.keys(AFFILIATES[bestKey]).forEach(function(pk) {
+          if (!AFFILIATES[bestKey][pk]) return;
+          var p = PARTNER_INFO[pk];
+          html += '<a href="' + p.url + '?utm_source=simulateur&utm_medium=result-cta&utm_campaign=' + pk + '" target="_blank" rel="noopener noreferrer" ';
+          html += 'class="flex items-center gap-3 bg-white border-2 border-neutral-200 rounded-xl px-4 py-3 hover:border-primary hover:shadow-md transition-all" ';
+          html += 'onclick="if(typeof gtag===\'function\'){gtag(\'event\',\'clic_affiliation\',{event_category:\'affiliation\',event_label:\'' + pk + '\'});}">';
+          html += '<div class="w-10 h-10 rounded-lg flex items-center justify-center text-white font-bold text-sm" style="background:' + p.color + '">' + p.name.charAt(0) + '</div>';
+          html += '<div><p class="font-semibold text-sm text-neutral-900">' + p.name + '</p>';
+          html += '<p class="text-xs text-neutral-500">' + p.accroche + '</p></div>';
+          html += '</a>';
+        });
+        html += '</div></div>';
+      }
+      html += '</div>';
+
+      // Zone 2 : Alternatives
+      if (results.length > 1) {
+        html += '<h4 class="font-heading text-lg font-bold text-neutral-900 mb-4 mt-8">Alternatives Ã  considÃ©rer</h4>';
+
+        // Comparison table
+        html += '<div class="overflow-x-auto mb-6"><table class="w-full text-sm border-collapse">';
+        html += '<thead><tr class="bg-neutral-100"><th class="text-left p-3 rounded-tl-lg font-semibold">CritÃ¨re</th>';
+        results.forEach(function(r, i) {
+          var cls = i === results.length - 1 ? ' rounded-tr-lg' : '';
+          html += '<th class="text-center p-3 font-semibold' + cls + '">' + (i === 0 ? 'ðŸ¥‡ ' : i === 1 ? 'ðŸ¥ˆ ' : 'ðŸ¥‰ ') + r.statut.shortName + '<br><span class="text-xs font-normal text-neutral-500">' + r.score + '% compatible</span></th>';
+        });
+        html += '</tr></thead><tbody>';
+
+        var criteria = [
+          { label: 'Cotisations', key: 'cotisations' },
+          { label: 'FiscalitÃ©', key: 'fiscal' },
+          { label: 'ResponsabilitÃ©', key: 'responsabilite' },
+          { label: 'ComplexitÃ© admin.', key: 'complexite' },
+          { label: 'Capital minimum', key: 'capital' }
+        ];
+        criteria.forEach(function(c, ci) {
+          var bgClass = ci % 2 === 0 ? 'bg-white' : 'bg-neutral-50';
+          html += '<tr class="' + bgClass + ' border-b border-neutral-100"><td class="p-3 font-medium text-neutral-700">' + c.label + '</td>';
+          results.forEach(function(r) {
+            html += '<td class="p-3 text-center text-neutral-600">' + r.statut[c.key] + '</td>';
+          });
+          html += '</tr>';
+        });
+        html += '</tbody></table></div>';
+
+        // Alternative cards
+        results.slice(1).forEach(function(r, i) {
+          var rank = i === 0 ? 'ðŸ¥ˆ' : 'ðŸ¥‰';
+          html += '<div class="border-2 border-neutral-200 bg-white rounded-2xl p-6 mb-4">';
+          html += '<div class="flex items-center gap-3 mb-3">';
+          html += '<span class="text-2xl">' + rank + '</span>';
+          html += '<h4 class="font-heading text-lg font-bold text-neutral-900">' + r.statut.name + '</h4>';
+          html += '<span class="text-sm font-semibold px-3 py-1 rounded-full bg-neutral-100 text-neutral-600">' + r.score + '% compatible</span>';
+          html += '</div>';
+          html += '<p class="text-neutral-600 text-sm leading-relaxed">' + r.reason + '</p>';
+          html += '</div>';
+        });
+      }
+
+      // Zone 3 : Actions
+      html += '<div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">';
+      html += '<button onclick="resetWizard()" class="inline-flex items-center bg-neutral-100 text-neutral-700 font-semibold px-6 py-3 rounded-xl hover:bg-neutral-200 transition-colors" aria-label="Recommencer le simulateur">';
+      html += '<svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>';
+      html += 'Recommencer</button>';
+      html += '<a href="/tableau-comparatif-des-differents-statuts-juridiques" class="inline-flex items-center bg-primary text-white font-semibold px-6 py-3 rounded-xl hover:bg-primary-dark transition-colors">';
+      html += 'Voir le comparatif complet';
+      html += '<svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>';
+      html += '</a></div>';
+
+      // Disclaimer
+      html += '<p class="text-xs text-neutral-400 text-center mt-6 max-w-lg mx-auto">Ce simulateur a une vocation informative et pÃ©dagogique. Il ne remplace pas les conseils personnalisÃ©s d\'un expert-comptable ou d\'un avocat. Nous vous recommandons de consulter un professionnel avant toute dÃ©cision.</p>';
+
+      container.innerHTML = html;
+    }
+
+    function getRecommendations() {
+      var a = answers;
+      // a[0] = situation (creation/changement)
+      // a[1] = activite (commerce/artisanat/services/liberale/agriculture/autre)
+      // a[2] = associes (seul/un_associe/plusieurs)
+      // a[3] = CA (moins_15k/15k_77k/77k_200k/plus_200k)
+      // a[4] = objectif (simplicite/fiscal/protection/credibilite)
+      // a[5] = salarie (oui/non)
+      // a[6] = remuneration (salaire/benefices/pas_decide)
+      // a[7] = risque (proteger/pas_patrimoine)
+      // a[8] = fonds (oui_court/peut_etre/non)
+      // a[9] = tva (pas_tva/recuperer_tva/ne_sais_pas)
+      // a[10] = compta (seul/aide/expert)
+
+      var scores = {};
+      var reasons = {};
+      var allKeys = ['micro','ei','eurl','sasu','sarl','sas','snc','sci'];
+      allKeys.forEach(function(k) { scores[k] = 50; reasons[k] = ''; });
+
+      var seul = a[2] === 'seul';
+      var unAssocie = a[2] === 'un_associe';
+      var plusieurs = a[2] === 'plusieurs';
+
+      // ===== Q2: AssociÃ©s (FORT - Ã©liminatoire) =====
+      if (seul) {
+        scores.micro += 20; scores.ei += 15; scores.eurl += 15; scores.sasu += 15;
+        scores.sarl = -100; scores.sas = -100; scores.snc = -100;
+        scores.sci -= 30;
+      } else if (unAssocie) {
+        scores.micro = -100; scores.ei = -100;
+        scores.eurl = -100; // EURL = unipersonnel
+        scores.sasu = -100; // SASU = unipersonnel
+        scores.sarl += 20; scores.sas += 20; scores.snc += 5;
+        scores.sci += 10;
+      } else if (plusieurs) {
+        scores.micro = -100; scores.ei = -100;
+        scores.eurl = -100; scores.sasu = -100;
+        scores.sarl += 20; scores.sas += 20; scores.snc += 10;
+        scores.sci += 15;
+      }
+
+      // ===== Q1: ActivitÃ© (FORT) =====
+      if (a[1] === 'commerce') {
+        scores.micro += 5; scores.sarl += 5; scores.sas += 5;
+        scores.sci -= 50; // SCI = civil, pas commercial
+      } else if (a[1] === 'artisanat') {
+        scores.micro += 10; scores.ei += 10; scores.eurl += 5;
+        scores.sci -= 50;
+      } else if (a[1] === 'services') {
+        scores.micro += 10; scores.sasu += 5; scores.eurl += 5;
+        scores.sci -= 40;
+      } else if (a[1] === 'liberale') {
+        scores.micro += 5; scores.sasu += 10; scores.eurl += 5;
+        scores.snc += 5; scores.sci += 10;
+        scores.sarl += 0; // SEL possible mais pas courant
+      } else if (a[1] === 'agriculture') {
+        scores.micro -= 20; scores.sci -= 20;
+        // Pas de statuts agricoles dÃ©diÃ©s dans notre DB (EARL, GAEC) â€” on favorise les formes compatibles
+        scores.ei += 5; scores.eurl += 5; scores.sarl += 5;
+      }
+
+      // ===== Q3: CA (FORT) =====
+      if (a[3] === 'moins_15k') {
+        scores.micro += 25;
+        scores.ei += 5;
+        scores.sasu -= 10; scores.sas -= 10; // frais de structure inutiles
+        reasons.micro = 'Avec un CA infÃ©rieur Ã  15 000 â‚¬, la micro-entreprise est idÃ©ale : aucune charge si pas de CA, gestion ultra-simple.';
+      } else if (a[3] === '15k_77k') {
+        scores.micro += 15;
+        scores.ei += 10; scores.eurl += 10; scores.sasu += 5;
+        reasons.micro = 'Votre CA reste sous le seuil micro-entreprise, vous pouvez bÃ©nÃ©ficier du rÃ©gime simplifiÃ©.';
+      } else if (a[3] === '77k_200k') {
+        scores.micro -= 30; // dÃ©passement seuil services
+        scores.ei += 15; scores.eurl += 15; scores.sasu += 15;
+        scores.sarl += 10; scores.sas += 10;
+        reasons.eurl = 'Votre CA dÃ©passe le seuil micro : l\'EURL vous permet de dÃ©duire vos charges tout en gardant la responsabilitÃ© limitÃ©e.';
+        reasons.sasu = 'Votre CA justifie une structure sociÃ©taire avec dÃ©duction des charges et rÃ©gime assimilÃ© salariÃ©.';
+      } else if (a[3] === 'plus_200k') {
+        scores.micro = -100;
+        scores.ei += 5; scores.eurl += 15; scores.sasu += 20;
+        scores.sarl += 15; scores.sas += 20;
+        reasons.sas = 'Avec un CA supÃ©rieur Ã  200 000 â‚¬, une sociÃ©tÃ© (SAS/SARL) offre la meilleure optimisation fiscale et crÃ©dibilitÃ©.';
+        reasons.sasu = 'Votre CA Ã©levÃ© justifie pleinement une SASU avec optimisation rÃ©munÃ©ration/dividendes.';
+      }
+
+      // ===== Q4: Objectif (FORT) =====
+      if (a[4] === 'simplicite') {
+        scores.micro += 20; scores.ei += 10;
+        scores.eurl -= 5; scores.sasu -= 5;
+        scores.sas -= 10; scores.sarl -= 5; scores.snc -= 10;
+      } else if (a[4] === 'fiscal') {
+        scores.eurl += 15; scores.sasu += 15; scores.sas += 10; scores.sarl += 10;
+        scores.ei += 10;
+        scores.micro -= 5; // pas de dÃ©duction de charges
+      } else if (a[4] === 'protection') {
+        scores.eurl += 15; scores.sasu += 15; scores.sarl += 15; scores.sas += 15;
+        scores.snc -= 20; scores.sci -= 10;
+        scores.micro += 5; scores.ei += 5; // patrimoine sÃ©parÃ© depuis 2022
+      } else if (a[4] === 'credibilite') {
+        scores.sasu += 15; scores.sas += 15; scores.sarl += 10;
+        scores.eurl += 5;
+        scores.micro -= 10;
+      }
+
+      // ===== Q5: Emploi salariÃ© (MOYEN) =====
+      if (a[5] === 'oui') {
+        scores.micro += 15; // cumul trÃ¨s facile
+        scores.sasu += 5; // pas de cotisations si pas de salaire, couverture via emploi
+        scores.ei += 5;
+      }
+
+      // ===== Q6: RÃ©munÃ©ration (MOYEN) =====
+      if (a[6] === 'salaire') {
+        scores.sasu += 10; scores.sas += 10; // fiche de paie
+        scores.sarl += 5; // gÃ©rant minoritaire
+        scores.micro -= 5;
+      } else if (a[6] === 'benefices') {
+        scores.micro += 5; scores.ei += 10; scores.eurl += 10;
+        scores.sarl += 5;
+      }
+
+      // ===== Q7: Risque (FORT) =====
+      if (a[7] === 'proteger') {
+        scores.eurl += 15; scores.sasu += 15; scores.sarl += 15; scores.sas += 15;
+        scores.snc -= 25;
+        scores.sci -= 15;
+        scores.micro += 5; scores.ei += 5; // sÃ©paration patrimoine depuis 2022
+      } else {
+        scores.micro += 5; scores.ei += 10;
+        scores.snc += 5;
+      }
+
+      // ===== Q8: LevÃ©e de fonds (MOYEN) =====
+      if (a[8] === 'oui_court') {
+        scores.sas += 25; scores.sasu += 20;
+        scores.micro -= 15; scores.ei -= 15;
+        scores.sarl -= 5; // cession de parts encadrÃ©e
+        scores.eurl += 5; // transformable en SARL puis SAS
+        reasons.sas = (reasons.sas || '') + ' La SAS est le vÃ©hicule idÃ©al pour lever des fonds grÃ¢ce aux actions de prÃ©fÃ©rence.';
+        reasons.sasu = (reasons.sasu || '') + ' La SASU peut facilement accueillir des investisseurs en devenant SAS.';
+      } else if (a[8] === 'peut_etre') {
+        scores.sas += 10; scores.sasu += 10;
+        scores.eurl += 5; scores.sarl += 0;
+        scores.micro -= 5;
+      }
+
+      // ===== Q9: TVA (FAIBLE) =====
+      if (a[9] === 'pas_tva') {
+        scores.micro += 10;
+      } else if (a[9] === 'recuperer_tva') {
+        scores.micro -= 10;
+        scores.ei += 5; scores.eurl += 5; scores.sasu += 5;
+        scores.sarl += 5; scores.sas += 5;
+      }
+
+      // ===== Q10: ComptabilitÃ© (FAIBLE) =====
+      if (a[10] === 'seul') {
+        scores.micro += 10; scores.ei += 5;
+        scores.sas -= 5; scores.sarl -= 5;
+        scores.snc -= 5;
+      } else if (a[10] === 'expert') {
+        scores.eurl += 5; scores.sasu += 5;
+        scores.sarl += 5; scores.sas += 5;
+      }
+
+      // Build results array
+      var results = [];
+      allKeys.forEach(function(key) {
+        if (scores[key] <= -50) return; // eliminated
+        var raw = Math.min(Math.max(scores[key], 0), 100);
+        // Normalize to 55-98 range for display
+        var normalized = Math.round(55 + (raw / 100) * 43);
+        if (raw <= 10) normalized = Math.round(30 + raw * 2);
+        results.push({
+          key: key,
+          statut: STATUTS[key],
+          score: Math.min(normalized, 98),
+          rawScore: scores[key],
+          reason: reasons[key] || STATUTS[key].description
+        });
+      });
+
+      results.sort(function(a, b) { return b.rawScore - a.rawScore; });
+      return results.slice(0, 3);
+    }
+
+    function resetWizard() {
+      currentStep = 0;
+      answers = {};
+      document.querySelectorAll('.wizard-option').forEach(function(opt) {
+        opt.classList.remove('selected');
+        opt.setAttribute('aria-checked', 'false');
+      });
+      updateWizard();
+      document.getElementById('wizard-progress').style.width = '0%';
+      document.getElementById('wizard-step-label').textContent = 'Pour commencer';
+      document.getElementById('wizard-percent').textContent = '0%';
+
+      document.getElementById('btn-next').classList.add('hidden');
+      document.getElementById('btn-next').classList.remove('inline-flex');
+      document.getElementById('btn-prev').classList.add('hidden');
+      document.getElementById('btn-prev').classList.remove('inline-flex');
+      document.getElementById('wizard-nav').classList.remove('hidden');
+
+      document.querySelectorAll('.wizard-step').forEach(function(step) { step.classList.remove('active'); });
+      document.querySelector('.wizard-step[data-step="0"]').classList.add('active');
+
+      document.getElementById('simulateur').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    // ========== Accordion Logic ==========
+    function toggleAccordion(button) {
+      const content = button.nextElementSibling;
+      const icon = button.querySelector('.accordion-icon');
+      const isOpen = content.classList.contains('open');
+
+      // Close all
+      document.querySelectorAll('.accordion-content').forEach(c => c.classList.remove('open'));
+      document.querySelectorAll('.accordion-icon').forEach(i => i.style.transform = 'rotate(0deg)');
+
+      if (!isOpen) {
+        content.classList.add('open');
+        icon.style.transform = 'rotate(180deg)';
+      }
+    }
+
+    // ========== Reveal on Scroll ==========
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+        }
+      });
+    }, {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    });
+
+    document.querySelectorAll('.reveal-on-scroll').forEach(el => {
+      observer.observe(el);
+    });
+
+    // ========== Smooth scroll for anchors ==========
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  </script>
+
+    function toggleFaq(button) {
+        var answer = button.nextElementSibling;
+        var icon = button.querySelector('.faq-icon');
+        var isOpen = answer.classList.contains('open');
+        document.querySelectorAll('.faq-answer').forEach(function(a) { a.classList.remove('open'); });
+        document.querySelectorAll('.faq-icon').forEach(function(i) { i.style.transform = 'rotate(0deg)'; });
+        if (!isOpen) {
+            answer.classList.add('open');
+            icon.style.transform = 'rotate(180deg)';
+        }
+    }
+    </script>
+</body>
+</html>

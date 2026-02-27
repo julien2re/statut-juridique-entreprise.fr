@@ -36,4 +36,11 @@
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://statut-juridique-entreprise.fr/statut-juridique-entreprise-pdf" />
   </url>
+  <url>
+    <loc>https://statut-juridique-entreprise.fr/quel-statut-juridique-choisir</loc>
+    <lastmod>2026-02-27T19:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://statut-juridique-entreprise.fr/quel-statut-juridique-choisir" />
+  </url>
 </urlset>

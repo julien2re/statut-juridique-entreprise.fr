@@ -11,6 +11,7 @@
     // ─── Configuration ─────────────────────────────────────────────────────────
     const PAGES = [
         { href: '/', label: 'Guide Statut Juridique' },
+        { href: '/quel-statut-juridique-choisir', label: 'Quel statut choisir ?' },
         { href: '/statut-juridique-entreprise-definition', label: 'Définition' },
         { href: '/statut-juridique-entreprise-exemple', label: 'Exemples' },
         { href: '/tableau-comparatif-des-differents-statuts-juridiques', label: 'Comparatif' },

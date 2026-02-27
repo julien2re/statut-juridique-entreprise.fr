@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git add index.html)",
+      "Bash(git commit:*)",
+      "Bash(node deploy.js --ovh)"
+    ]
+  }
+}
