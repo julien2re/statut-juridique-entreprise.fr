@@ -2,28 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>statut-juridique-entreprise.fr/index.html</loc>
-    <lastmod>2026-02-26T18:40:00+00:00</lastmod>
-    <xhtml:link rel="alternate" hreflang="fr" href="statut-juridique-entreprise.fr/index.html" />
+    <loc>https://statut-juridique-entreprise.fr/</loc>
+    <lastmod>2026-02-27T17:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://statut-juridique-entreprise.fr/" />
   </url>
   <url>
-    <loc>statut-juridique-entreprise.fr/tableau-comparatif-des-differents-statuts-juridiques.html</loc>
-    <lastmod>2026-02-26T18:40:00+00:00</lastmod>
-    <xhtml:link rel="alternate" hreflang="fr" href="statut-juridique-entreprise.fr/tableau-comparatif-des-differents-statuts-juridiques.html" />
+    <loc>https://statut-juridique-entreprise.fr/statut-juridique-entreprise-definition.html</loc>
+    <lastmod>2026-02-27T17:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://statut-juridique-entreprise.fr/statut-juridique-entreprise-definition.html" />
   </url>
   <url>
-    <loc>statut-juridique-entreprise.fr/statut-juridique-entreprise-exemple.html</loc>
-    <lastmod>2026-02-26T18:40:00+00:00</lastmod>
-    <xhtml:link rel="alternate" hreflang="fr" href="statut-juridique-entreprise.fr/statut-juridique-entreprise-exemple.html" />
+    <loc>https://statut-juridique-entreprise.fr/statut-juridique-entreprise-exemple.html</loc>
+    <lastmod>2026-02-27T17:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://statut-juridique-entreprise.fr/statut-juridique-entreprise-exemple.html" />
   </url>
   <url>
-    <loc>statut-juridique-entreprise.fr/statut-juridique-entreprise-definition.html</loc>
-    <lastmod>2026-02-26T18:40:00+00:00</lastmod>
-    <xhtml:link rel="alternate" hreflang="fr" href="statut-juridique-entreprise.fr/statut-juridique-entreprise-definition.html" />
+    <loc>https://statut-juridique-entreprise.fr/tableau-comparatif-des-differents-statuts-juridiques.html</loc>
+    <lastmod>2026-02-27T17:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://statut-juridique-entreprise.fr/tableau-comparatif-des-differents-statuts-juridiques.html" />
   </url>
   <url>
-    <loc>statut-juridique-entreprise.fr/statut-juridique-entreprise-pdf.html</loc>
-    <lastmod>2026-02-26T18:40:00+00:00</lastmod>
-    <xhtml:link rel="alternate" hreflang="fr" href="statut-juridique-entreprise.fr/statut-juridique-entreprise-pdf.html" />
+    <loc>https://statut-juridique-entreprise.fr/statut-juridique-entreprise-pdf.html</loc>
+    <lastmod>2026-02-27T17:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://statut-juridique-entreprise.fr/statut-juridique-entreprise-pdf.html" />
   </url>
 </urlset>
