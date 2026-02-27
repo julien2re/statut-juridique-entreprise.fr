@@ -14,7 +14,8 @@
         { href: '/statut-juridique-entreprise-definition', label: 'Définition' },
         { href: '/statut-juridique-entreprise-exemple', label: 'Exemples' },
         { href: '/tableau-comparatif-des-differents-statuts-juridiques', label: 'Comparatif' },
-        { href: '/statut-juridique-entreprise-pdf', label: 'Guide PDF' }
+        { href: '/statut-juridique-entreprise-pdf', label: 'Guide PDF' },
+        { href: 'https://statut-juridique-entreprise.fr/blog/', label: 'Blog' }
     ];
 
     const CTA = { href: '/#simulateur', label: 'Lancer le simulateur' };
