@@ -1,0 +1,28 @@
+{
+  "name": "statut-juridique-entreprise.fr",
+  "version": "1.0.0",
+  "description": "Site web dédié aux statuts juridiques d'entreprise en France.",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "node deploy.js",
+    "deploy:github": "node deploy.js --github",
+    "deploy:ovh": "node deploy.js --ovh",
+    "deploy:check": "node deploy.js --check"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/julien2re/statut-juridique-entreprise.fr.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/julien2re/statut-juridique-entreprise.fr/issues"
+  },
+  "homepage": "https://github.com/julien2re/statut-juridique-entreprise.fr#readme",
+  "dependencies": {
+    "dotenv": "^17.3.1",
+    "ssh2": "^1.17.0"
+  }
+}
