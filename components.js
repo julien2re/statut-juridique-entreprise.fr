@@ -10,26 +10,29 @@
 
     // ─── Configuration ─────────────────────────────────────────────────────────
     const PAGES = [
-        { href: '/index.html', label: 'Guide Statut Juridique' },
-        { href: '/statut-juridique-entreprise-definition.html', label: 'Définition' },
-        { href: '/statut-juridique-entreprise-exemple.html', label: 'Exemples' },
-        { href: '/tableau-comparatif-des-differents-statuts-juridiques.html', label: 'Comparatif' },
-        { href: '/statut-juridique-entreprise-pdf.html', label: 'Guide PDF' }
+        { href: '/', label: 'Guide Statut Juridique' },
+        { href: '/statut-juridique-entreprise-definition', label: 'Définition' },
+        { href: '/statut-juridique-entreprise-exemple', label: 'Exemples' },
+        { href: '/tableau-comparatif-des-differents-statuts-juridiques', label: 'Comparatif' },
+        { href: '/statut-juridique-entreprise-pdf', label: 'Guide PDF' }
     ];
 
-    const CTA = { href: '/index.html#simulateur', label: 'Lancer le simulateur' };
+    const CTA = { href: '/#simulateur', label: 'Lancer le simulateur' };
 
     // Détecte la page courante
     function getCurrentPage() {
-        const path = window.location.pathname;
+        let path = window.location.pathname;
+        // Normaliser : supprimer .html et trailing slash (sauf racine)
+        path = path.replace(/\.html$/, '').replace(/\/index$/, '/').replace(/\/$/, '') || '/';
         for (const page of PAGES) {
-            if (path === page.href || path.endsWith(page.href.replace('/', ''))) {
+            const normalizedHref = page.href.replace(/\/$/, '') || '/';
+            if (path === normalizedHref) {
                 return page.href;
             }
         }
-        // Fallback: si on est sur /index.html ou /
-        if (path === '/' || path === '' || path.endsWith('index.html')) {
-            return '/index.html';
+        // Fallback: racine
+        if (path === '/' || path === '' || path === '/index') {
+            return '/';
         }
         return null;
     }
@@ -63,7 +66,7 @@
     <div class="site-header__container">
         <div class="site-header__inner">
             <!-- Logo -->
-            <a href="/index.html" class="site-header__logo" aria-label="Accueil - Statut Juridique Entreprise">
+            <a href="/" class="site-header__logo" aria-label="Accueil - Statut Juridique Entreprise">
                 <img src="/images/favicon-statut-juridique-entreprise.png" alt="Logo Statut Juridique Entreprise" class="site-header__logo-img" width="36" height="36">
                 <div class="site-header__logo-text">Statut <span>Juridique</span> Entreprise</div>
             </a>
@@ -96,7 +99,7 @@
     <!-- Mobile Panel -->
     <div class="site-nav-mobile" id="navMobilePanel" role="dialog" aria-modal="true" aria-label="Menu de navigation">
         <div class="site-nav-mobile__header">
-            <a href="/index.html" class="site-header__logo" aria-label="Accueil">
+            <a href="/" class="site-header__logo" aria-label="Accueil">
                 <img src="/images/favicon-statut-juridique-entreprise.png" alt="Logo Statut Juridique Entreprise" class="site-header__logo-img" width="36" height="36">
                 <div class="site-header__logo-text">Statut <span>Juridique</span> Entreprise</div>
             </a>
@@ -133,7 +136,7 @@
         <div class="site-footer__grid">
             <!-- Brand -->
             <div class="site-footer__brand">
-                <a href="/index.html" class="site-footer__brand-logo" aria-label="Accueil - Statut Juridique Entreprise">
+                <a href="/" class="site-footer__brand-logo" aria-label="Accueil - Statut Juridique Entreprise">
                     <img src="/images/favicon-statut-juridique-entreprise.png" alt="Logo Statut Juridique Entreprise" class="site-footer__logo-img" width="32" height="32">
                     <div class="site-footer__brand-name">Statut Juridique Entreprise</div>
                 </a>

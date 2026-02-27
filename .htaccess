@@ -1,16 +1,38 @@
 <IfModule mod_rewrite.c>
     RewriteEngine On
     RewriteBase /
+
+    # ─── Redirection 301 : /index.html → / ───
+    RewriteCond %{THE_REQUEST} \s/index\.html[\s?] [NC]
+    RewriteRule ^index\.html$ / [R=301,L]
+
+    # ─── Redirection 301 : supprimer .html des URLs ───
+    # Ex: /statut-juridique-entreprise-definition.html → /statut-juridique-entreprise-definition
+    RewriteCond %{THE_REQUEST} \s/(.+)\.html[\s?] [NC]
+    RewriteRule ^(.+)\.html$ /$1 [R=301,L]
+
+    # ─── Réécriture interne : servir le fichier .html sans l'afficher dans l'URL ───
+    # Si le fichier/dossier existe, le servir directement
     RewriteCond %{REQUEST_FILENAME} -f [OR]
     RewriteCond %{REQUEST_FILENAME} -d
     RewriteRule ^ - [L]
+
+    # Si l'URL se termine par / et qu'un index.html existe, le servir
     RewriteCond %{REQUEST_URI} /$
     RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI}index.html -f
     RewriteRule ^(.*/)$ $1index.html [L]
-    RewriteCond %{REQUEST_URI} !.[a-zA-Z0-9]{1,8}$
+
+    # Si l'URL sans extension correspond à un fichier .html, le servir
+    RewriteCond %{REQUEST_URI} !\.[a-zA-Z0-9]{1,8}$
     RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI}.html -f
     RewriteRule ^(.+)$ $1.html [L]
+
+    # Racine → index.html
     RewriteCond %{REQUEST_URI} ^/$
     RewriteCond %{DOCUMENT_ROOT}/index.html -f
     RewriteRule ^$ index.html [L]
 </IfModule>
+
+# ─── Protection du dossier blog (WordPress) ───
+# Ne pas appliquer les règles ci-dessus au sous-dossier /blog/
+# WordPress a son propre .htaccess
