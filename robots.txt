@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: statut-juridique-entreprise.fr/sitemap.xml
