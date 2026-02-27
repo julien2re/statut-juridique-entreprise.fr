@@ -10,10 +10,14 @@
 
     // ─── Configuration ─────────────────────────────────────────────────────────
     const PAGES = [
-        { href: '/', label: 'Guide Statut Juridique' },
+        {
+            href: '/', label: 'Guide Statut Juridique',
+            children: [
+                { href: '/statut-juridique-entreprise-definition', label: 'Définition', desc: 'Comprendre les statuts', icon: '📖' },
+                { href: '/statut-juridique-entreprise-exemple', label: 'Exemples', desc: 'Cas concrets par métier', icon: '💡' }
+            ]
+        },
         { href: '/quel-statut-juridique-choisir', label: 'Quel statut choisir ?' },
-        { href: '/statut-juridique-entreprise-definition', label: 'Définition' },
-        { href: '/statut-juridique-entreprise-exemple', label: 'Exemples' },
         { href: '/tableau-comparatif-des-differents-statuts-juridiques', label: 'Comparatif' },
         { href: '/statut-juridique-entreprise-pdf', label: 'Guide PDF' },
         { href: 'https://statut-juridique-entreprise.fr/blog/', label: 'Blog' }
@@ -26,35 +30,79 @@
         let path = window.location.pathname;
         // Normaliser : supprimer .html et trailing slash (sauf racine)
         path = path.replace(/\.html$/, '').replace(/\/index$/, '/').replace(/\/$/, '') || '/';
+        // Check all pages including children
         for (const page of PAGES) {
             const normalizedHref = page.href.replace(/\/$/, '') || '/';
-            if (path === normalizedHref) {
-                return page.href;
+            if (path === normalizedHref) return page.href;
+            if (page.children) {
+                for (const child of page.children) {
+                    const normalizedChild = child.href.replace(/\/$/, '') || '/';
+                    if (path === normalizedChild) return child.href;
+                }
             }
         }
-        // Fallback: racine
-        if (path === '/' || path === '' || path === '/index') {
-            return '/';
-        }
+        if (path === '/' || path === '' || path === '/index') return '/';
         return null;
+    }
+
+    // Collect all hrefs (flat) for footer/mobile
+    function getAllPages() {
+        const flat = [];
+        for (const page of PAGES) {
+            flat.push({ href: page.href, label: page.label });
+            if (page.children) {
+                for (const child of page.children) {
+                    flat.push({ href: child.href, label: child.label });
+                }
+            }
+        }
+        return flat;
     }
 
     // ─── HEADER ────────────────────────────────────────────────────────────────
     function createHeader() {
         const currentPage = getCurrentPage();
 
-        // Navigation links (desktop)
+        // Navigation links (desktop) — with dropdown
         const navLinks = PAGES.map(page => {
+            if (page.children) {
+                // Parent with dropdown
+                const isParentActive = page.href === currentPage;
+                const isChildActive = page.children.some(c => c.href === currentPage);
+                const toggleClass = (isParentActive || isChildActive)
+                    ? 'site-nav__dropdown-toggle site-nav__dropdown-toggle--active'
+                    : 'site-nav__dropdown-toggle';
+
+                const childLinks = page.children.map(child => {
+                    const isActive = child.href === currentPage;
+                    const cls = isActive ? 'site-nav__dropdown-item site-nav__dropdown-item--active' : 'site-nav__dropdown-item';
+                    return `<a href="${child.href}" class="${cls}">
+                            <span class="site-nav__dropdown-icon">${child.icon}</span>
+                            <span class="site-nav__dropdown-label">${child.label}<small>${child.desc}</small></span>
+                        </a>`;
+                }).join('\n');
+
+                return `<div class="site-nav__dropdown">
+                    <a href="${page.href}" class="${toggleClass}">
+                        ${page.label}
+                        <svg class="site-nav__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </a>
+                    <div class="site-nav__dropdown-menu">
+                        ${childLinks}
+                    </div>
+                </div>`;
+            }
+
+            // Normal link
             const isActive = page.href === currentPage;
-            const activeClass = isActive
-                ? 'site-nav__link site-nav__link--active'
-                : 'site-nav__link';
+            const activeClass = isActive ? 'site-nav__link site-nav__link--active' : 'site-nav__link';
             const ariaCurrent = isActive ? ' aria-current="page"' : '';
             return `<a href="${page.href}" class="${activeClass}"${ariaCurrent}>${page.label}</a>`;
         }).join('\n                ');
 
-        // Navigation links (mobile)
-        const mobileLinks = PAGES.map(page => {
+        // Navigation links (mobile) — flat list with all pages
+        const allPages = getAllPages();
+        const mobileLinks = allPages.map(page => {
             const isActive = page.href === currentPage;
             const activeClass = isActive
                 ? 'site-nav-mobile__link site-nav-mobile__link--active'
@@ -124,7 +172,8 @@
 
     // ─── FOOTER ────────────────────────────────────────────────────────────────
     function createFooter() {
-        const navLinks = PAGES.map(page =>
+        const allPages = getAllPages();
+        const navLinks = allPages.map(page =>
             `<li><a href="${page.href}" class="site-footer__link">${page.label}</a></li>`
         ).join('\n                        ');
 
