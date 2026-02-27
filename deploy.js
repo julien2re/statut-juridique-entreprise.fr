@@ -30,8 +30,12 @@ const REMOTE_PATH = process.env.PLESK_SITE_PATH || '/var/www/vhosts/statut-jurid
 // Fichiers à déployer (tous les fichiers du projet sauf les outils)
 const EXCLUDED = [
     'node_modules', '.git', '.env', 'package.json', 'package-lock.json',
-    'deploy.js', '.gitignore', 'README.md'
+    'deploy.js', '.gitignore', 'README.md',
+    'blog'  // ⚠️ NE JAMAIS TOUCHER : contient le site WordPress (articles du blog)
 ];
+
+// Dossiers protégés sur le serveur distant — jamais uploadés ni modifiés
+const PROTECTED_REMOTE_DIRS = ['blog'];
 
 // ─── Utilitaires ───────────────────────────────────────────────────────────
 function log(msg) { console.log(`  ${msg}`); }
@@ -137,6 +141,15 @@ async function pushToPlesk() {
         for (const localFile of files) {
             const relativePath = path.relative(localDir, localFile).replace(/\\/g, '/');
             const remoteFile = `${REMOTE_PATH}/${relativePath}`;
+
+            // 🛡️ Garde-fou : ne JAMAIS toucher aux dossiers protégés (ex: /blog = WordPress)
+            const isProtected = PROTECTED_REMOTE_DIRS.some(dir =>
+                relativePath.startsWith(dir + '/') || relativePath === dir
+            );
+            if (isProtected) {
+                console.log(`  ⛔ ${relativePath} — IGNORÉ (dossier protégé)`);
+                continue;
+            }
 
             // Créer les sous-dossiers si nécessaire
             const remoteDir = path.dirname(remoteFile).replace(/\\/g, '/');
