@@ -64,7 +64,7 @@
         <div class="site-header__inner">
             <!-- Logo -->
             <a href="/index.html" class="site-header__logo" aria-label="Accueil - Statut Juridique Entreprise">
-                <div class="site-header__logo-icon" aria-hidden="true">SJ</div>
+                <img src="/images/favicon-statut-juridique-entreprise.png" alt="Logo Statut Juridique Entreprise" class="site-header__logo-img" width="36" height="36">
                 <div class="site-header__logo-text">Statut <span>Juridique</span> Entreprise</div>
             </a>
 
@@ -97,7 +97,7 @@
     <div class="site-nav-mobile" id="navMobilePanel" role="dialog" aria-modal="true" aria-label="Menu de navigation">
         <div class="site-nav-mobile__header">
             <a href="/index.html" class="site-header__logo" aria-label="Accueil">
-                <div class="site-header__logo-icon" aria-hidden="true">SJ</div>
+                <img src="/images/favicon-statut-juridique-entreprise.png" alt="Logo Statut Juridique Entreprise" class="site-header__logo-img" width="36" height="36">
                 <div class="site-header__logo-text">Statut <span>Juridique</span> Entreprise</div>
             </a>
             <button class="site-nav-mobile__close" id="navMobileClose" type="button" aria-label="Fermer le menu">
@@ -134,7 +134,7 @@
             <!-- Brand -->
             <div class="site-footer__brand">
                 <a href="/index.html" class="site-footer__brand-logo" aria-label="Accueil - Statut Juridique Entreprise">
-                    <div class="site-header__logo-icon" aria-hidden="true">SJ</div>
+                    <img src="/images/favicon-statut-juridique-entreprise.png" alt="Logo Statut Juridique Entreprise" class="site-footer__logo-img" width="32" height="32">
                     <div class="site-footer__brand-name">Statut Juridique Entreprise</div>
                 </a>
                 <p class="site-footer__brand-text">
