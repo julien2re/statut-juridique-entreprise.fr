@@ -59,6 +59,37 @@ function getFilesToDeploy(dir) {
     return files;
 }
 
+
+// ─── Cache Buster ──────────────────────────────────────────────────────────
+function injectCacheBuster() {
+    console.log('\n🧹 CACHE BUSTER');
+    console.log('─'.repeat(40));
+    try {
+        const timestamp = Date.now();
+        const filesToCheck = getFilesToDeploy(__dirname);
+        let updatedCount = 0;
+        
+        for (const fullPath of filesToCheck) {
+            if (fullPath.endsWith('.html')) {
+                let content = fs.readFileSync(fullPath, 'utf8');
+                // Regex to find src="/components.js" or "components.js" preserving the path option
+                const newContent = content.replace(/src="(\/)?components\.js(\?v=[^"]+)?"/g, `src="$1components.js?v=${timestamp}"`);
+                
+                // Similar for styles.css if needed, but keeping it focused on components.js
+                const newContentCSS = newContent.replace(/href="(\/)styles\.css(\?v=[^"]+)?"/g, `href="$1styles.css?v=${timestamp}"`);
+
+                if (content !== newContentCSS) {
+                    fs.writeFileSync(fullPath, newContentCSS, 'utf8');
+                    updatedCount++;
+                }
+            }
+        }
+        console.log(`✅ ${updatedCount} fichier(s) HTML mis à jour (Cache Buster : ?v=${timestamp})`);
+    } catch (e) {
+        console.error(`❌ Erreur Cache Buster: ${e.message}`);
+    }
+}
+
 // ─── GitHub ────────────────────────────────────────────────────────────────
 async function pushToGithub() {
     console.log('\n🔵 PUSH GITHUB');
@@ -229,6 +260,8 @@ async function main() {
         await checkPlesk();
         return;
     }
+
+    injectCacheBuster();
 
     let githubOk = true;
     let pleskOk = true;
